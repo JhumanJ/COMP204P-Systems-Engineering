@@ -1,0 +1,181 @@
+html, body, #page{
+	height: 100%;
+	width: 100%;
+}
+
+a.no-deco {
+	text-decoration: none !important;
+}
+
+/* -- Colors -- */
+
+.gray{
+	background-color: #E9EBEE;
+}
+
+.dark-blue {
+	background-color: #2d3e4f;
+}
+
+.txt-dark-blue {
+	color: #2d3e4f;
+}
+
+.white {
+	background-color: white;
+}
+
+.txt-white {
+	color: white;
+}
+
+/* -- Sizes -- */
+.height-100 {
+	height: 100%;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+.logo {
+	width: 170px;
+}
+
+.logo-big{
+	width: 250px;
+}
+
+/* -- Positionning -- */
+
+.mrg-top-25 {
+	margin-top: 25px;
+}
+
+.mrg-top-40 {
+	margin-top: 40px;
+}
+
+.mrg-left-40 {
+	margin-left: 40px;
+}
+
+.pad-top-40c {
+	padding-top: 40vh;
+}
+
+.no-pad {
+	padding: 0px;
+}
+
+.section-content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* -- Fonts -- */
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lora', serif;*/
+
+h1,h2,h4,h4,h5,h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+}
+
+p, li {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+/* -- Individual -- */
+
+.menu-xs {
+	color: #2d3e4f;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1000;
+	-webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+}
+
+.menu-xs:hover{
+	color: #96968E;
+}
+
+/* Sidebar */
+
+.sidebar{
+	position: fixed;
+    overflow-y: auto;
+}
+
+.sidebar .nav h4{
+	color: #96968E !important;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	margin-top: 25px;
+	-webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+
+}
+
+.sidebar .nav h4:hover {
+	color: white !important;
+}
+
+/* Content */
+
+
+/* Section 1 */
+
+#section-1 {
+	height: 100%;
+	background-image: url('../img/bg-main.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+#section-1 h2 {
+	font-weight: 100;
+}
+
+/* Section - Team */
+
+#section-team {
+	padding: 30px;
+}
+
+/* ----- Utilities ------ */
+/*Clearfix*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+
