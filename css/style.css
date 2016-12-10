@@ -155,6 +155,18 @@ p, li {
 	padding: 30px;
 }
 
+/* Separator 1 */
+
+#separator-1 {
+	height: 40vh;
+	background-image: url('../img/separator-1.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
 /* ----- Utilities ------ */
 /*Clearfix*/
 .clearfix:after {
