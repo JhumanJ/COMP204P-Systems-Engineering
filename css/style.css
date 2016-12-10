@@ -130,6 +130,18 @@ p, li {
 	color: white !important;
 }
 
+.nav>li>a {
+	padding: 0px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background: none;
+}
+
+.nav li.active h4{
+	color: white !important;
+}
+
 /* Content */
 
 
@@ -160,6 +172,16 @@ p, li {
 #separator-1 {
 	height: 40vh;
 	background-image: url('../img/separator-1.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+#separator-2 {
+	height: 40vh;
+	background-image: url('../img/separator-2.jpg');
 	background-size:cover;
 	background-repeat: no-repeat;
     background-attachment: fixed;
