@@ -169,6 +169,16 @@ p, li {
 
 /* Separators */
 
+#separator-0 {
+	height: 40vh;
+	background-image: url('../img/separator-0.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
 #separator-1 {
 	height: 40vh;
 	background-image: url('../img/separator-1.jpg');
