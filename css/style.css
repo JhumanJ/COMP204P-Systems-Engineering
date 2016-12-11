@@ -167,7 +167,7 @@ p, li {
 	padding: 30px;
 }
 
-/* Separator 1 */
+/* Separators */
 
 #separator-1 {
 	height: 40vh;
@@ -182,6 +182,16 @@ p, li {
 #separator-2 {
 	height: 40vh;
 	background-image: url('../img/separator-2.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+#separator-3 {
+	height: 40vh;
+	background-image: url('../img/separator-3.jpg');
 	background-size:cover;
 	background-repeat: no-repeat;
     background-attachment: fixed;
