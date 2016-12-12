@@ -42,7 +42,7 @@
   					<li><a class="no-deco" href="#section-research"><h4>TECHNOLOGIES - RESEARCH</h4></a></li>
   					<li><a class="no-deco" href="#section-experiments"><h4>EXPERIMENTS</h4></a></li>
   					<li><a class="no-deco" href="#section-prototype"><h4>PROTOTYPE</h4></a></li>
-  					<li><a class="no-deco" href="#"><h4>UI</h4></a></li>
+  					<li><a class="no-deco" href="#section-progress"><h4>PROGRESS</h4></a></li>
   					<li><a class="no-deco" href="#section-documents"><h4>DOCUMENTS</h4></a></li>
   				</ul>
   			</div>
@@ -398,7 +398,7 @@
 		 					</div>
 		 					<br>
 
-		 					<p>The team also designed some mock-ups in order to have a better understanding of the needs. <a data-toggle="collapse" data-target="#collapse-mockup">Click here to show them.</a></p>
+		 					<p>Another sub-team in the PEACH project is responsible for the UI. They will provide us design guidelines, but also react components ready to use and integrate. However, we still have to build our specific component, such as the calendar, and decide ourselves the content organization of the sub-app we are building. Therefore, the team also designed some mock-ups in order to have a better understanding of the needs. <br><a data-toggle="collapse" data-target="#collapse-mockup">Click here to show them.</a></p>
 
 		 					<div class="collapse" id="collapse-mockup">
 		 						<br>
@@ -669,29 +669,30 @@
 
 	 					<br>
 
-	 					<h4 class="txt-dark-blue text-center">Jobs List</h4>
+	 					<h4 class="txt-dark-blue text-center">Node.js</h4>
 
 	 					<div class="panel-group" id="jobs" role="tablist" aria-multiselectable="true">
 						  <div class="panel panel-default">
 						    <div class="panel-heading" role="tab" id="headingOne">
 						      <h4 class="panel-title">
 						        <a role="button" data-toggle="collapse" data-parent="#jobs" href="#displayTask" aria-expanded="true" aria-controls="collapseOne">
-						          Listing tasks
+						          Adding tasks
 						        </a>
 						      </h4>
 						    </div>
-						    <div id="displayTask" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						    <div id="displayTask" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 						      <div class="panel-body">
 
 						         <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Listing out tasks using Node</p>
+						         	<p>We designed a simple todo-list app to learn how to use node and its different modules. We used express (a node must-have), body parser (to fetch data transmitted via forms), and cookie-session to store user's todo list. The first thing done was to add tasks to users' session. The goal here was to get familiar with node, express framework, routing, and to experiments with forms.</p>
 						         	<p><b>Result:</b></p>
-						         	<p>...</p>
+						         	<img class="img-responsive center-block"  src="img/experiment-1.png">
+						         	<p>We believe that this small app helped us learn more about this technology. These experiments can be really useful for all of our requirements. Indeed, it involves basic but essential things such as forms handling or routing.</p>
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>-</p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -706,7 +707,7 @@
 						    <div class="panel-heading" role="tab" id="headingTwo">
 						      <h4 class="panel-title">
 						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#jobs" href="#addingTask" aria-expanded="false" aria-controls="collapseTwo">
-						          Adding tasks
+						          Listing tasks
 						        </a>
 						      </h4>
 						    </div>
@@ -714,13 +715,13 @@
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Being able to add tasks to the list</p>
+						         	<p>After tasks were done we needed to be able to display them. More details about the to-do list available in the first tab.</p>
 						         	<p><b>Result:</b></p>
-						         	<p>...</p>
+						         	<p><img class="img-responsive center-block"  src="img/experiment-2.png"></p>
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>-</p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -741,13 +742,13 @@
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Being able to delete tasks from the list</p>
+						         	<p>This step consits of deleting element of the list. We added little clickable cross next to each element to delete that.</p>
 						         	<p><b>Result:</b></p>
-						         	<p>...</p>
+						         	<p><img class="img-responsive center-block"  src="img/experiment-3.png"></p>
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>-</p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -768,13 +769,13 @@
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Allow an admin to assign a specific task to a specific user</p>
+						         	<p>Assign task to another user.</p>
 						         	<p><b>Result:</b></p>
 						         	<p>...</p>
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>-</p>
+						         	<p>Pending...</p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -785,7 +786,7 @@
 						  </div>
 						</div>
 
-						<h4 class="txt-dark-blue text-center">Scheduler</h4>
+						<h4 class="txt-dark-blue text-center">React</h4>
 
 	 					<div class="panel-group" id="scheduler" role="tablist" aria-multiselectable="true">
 						  <div class="panel panel-default">
@@ -800,7 +801,7 @@
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Create draggable elements that can be dragged around the screen</p>
+						         	<p>As we are going to have to to build react components that involves drag and drop we wanted to experiment with this feature.</p>
 						         	<p><b>Result:</b></p>
 						         	<p>...</p>
 						         </div>
@@ -946,6 +947,47 @@
 	 					<br>
 
 	 					<p>Coming soon (Note: add repo link + if deployed, final link)</p>
+
+
+					</div>		
+				
+  				</div>
+
+  				<div id="section-documents" class="clearfix width-100">
+					<div class="col-xs-12 section-content ">
+	 					<h3 class="text-center txt-dark-blue title">Progress</h3>
+
+	 					<div class="text-center">
+	 						<br>
+	 						<i class="fa fa-clock-o fa-3x txt-dark-blue" aria-hidden="true"></i>
+
+	 					</div>
+	 					<br>
+
+	 					<img class="img-responsive center-block" src="img/timeline-1.png">
+	 					<p>
+	 						<h4 class="txt-dark-blue">Briefing</h4>
+							At this stage, we met up with our client for the first time. After introducing himself to us, he introduced us to the UCL Peach Project and what it intends to do. He also gave us an idea of the application in mind and its functionality, dividing us into several sub-teams and assigning us specific tasks. Our sub-team was the Peach Cancer Team 1, and we were given the task of building several components for the application, which include a scheduler for the admin, a jobs list for the doctors and a workflow manager for the application.
+							<br>
+
+							<h4 class="txt-dark-blue">Research</h4>
+							We researched the potential frameworks that we might be using for this application which include React and Node, and some examples of the components we’re building. After discussing with the client and the other sub-teams, we agreed to use ElectrodeJS as a framework for our work. At this point, we started realizing the building of the workflow manager is unrealistic considering the time we have. After negotiating with our client, he agreed with it, removing it from the lists of requirements, which results in us needing to hardcode the business processes. We also came up with a MoSCoW requirement list and showed it to our client.
+							<br>
+
+							<h4 class="txt-dark-blue">Testing and Experiments</h4>
+							After deciding on the framework used, we did some small tests on the framework. We tried little experiments using React to model the jobs list and scheduler, while using Node to access a database to model accessing the MPI (Master Patients Index). Other experiments were done using Electrode to familiarise ourselves with Electrode as a framework.
+							<br>
+
+							<h4 class="txt-dark-blue">PoC and Prototyping</h4>
+							In this stage, we began working on our Proof of Concept, while creating a mini Electrode jobs list to prove that this concept is indeed possible. Our sub-team also decided to use an Azure virtual machine to deploy this prototype. We will proceed to showing this prototype to our client for his feedback so that we could further improve it.
+							<br>
+
+							<h4 class="txt-dark-blue">Development</h4>
+					
+							This stage has not been initialised.
+
+	 					</p>
+	 					
 
 
 					</div>		
