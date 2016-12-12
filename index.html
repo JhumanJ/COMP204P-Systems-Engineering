@@ -13,12 +13,17 @@
 	    <!-- CSS -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/animate.css">
 	    <link rel="stylesheet" href="css/style.css">
 
 	    <!-- SCRIPT -->
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  	<script src="js/wow.js"></script>
 	    <script src="js/script.js"></script>
+	    <script type="text/javascript">
+	    	new WOW().init();
+	    </script>
 
   	</head>
 	<body data-spy="scroll" data-target="#myNav" data-offset="20">
@@ -40,8 +45,7 @@
   					<li><a class="no-deco" href="#section-background"><h4>BACKGROUND</h4></a></li>
   					<li><a class="no-deco" href="#section-specifications"><h4>SPECIFICATIONS</h4></a></li>
   					<li><a class="no-deco" href="#section-research"><h4>TECHNOLOGIES - RESEARCH</h4></a></li>
-  					<li><a class="no-deco" href="#section-experiments"><h4>EXPERIMENTS</h4></a></li>
-  					<li><a class="no-deco" href="#section-prototype"><h4>PROTOTYPE</h4></a></li>
+  					<li><a class="no-deco" href="#section-experiments"><h4>EXPERIMENTS - PROTOTYPE</h4></a></li>
   					<li><a class="no-deco" href="#section-progress"><h4>PROGRESS</h4></a></li>
   					<li><a class="no-deco" href="#section-documents"><h4>DOCUMENTS</h4></a></li>
   				</ul>
@@ -53,8 +57,10 @@
   				<div class="col-sm-8 col-md-9 col-sm-offset-4 col-md-offset-3 height-100 no-pad">
 
 	  				<div id="section-1">
-						<img class="logo-big center-block pad-top-40c" src="img/logo-white.svg" alt="logo">
-						<h2 class="text-center txt-white">CANCER</h2>
+	  					<div class="wow fadeInUp">
+							<img class="logo-big center-block pad-top-40c" src="img/logo-white.svg" alt="logo">
+							<h2 class="text-center txt-white">CANCER</h2>
+						</div>
 						<a  target="_blank" href="http://www.ucl.ac.uk/"><img class="ucl-logo" src="img/ucl-logo.png"></a>
 	  				</div>
 
@@ -63,7 +69,7 @@
 		 					<h3 class="text-center txt-dark-blue title">INTRODUCTION</h3>
 
 		 					<br>
-		 					<div class="row">
+		 					<div class="row wow fadeIn">
 		 						<div class="col-xs-12 col-sm-6 col-sm-offset-3">
 		 							<div class="col-md-4 text-center">
 		 								<i class="fa fa-user-md txt-dark-blue fa-4x" aria-hidden="true"></i>
@@ -83,7 +89,7 @@
 							<h3 class="text-center txt-dark-blue title">CLIENT</h3>
 
 							<br>
-							<img class="img-circle center-block" src="img/navin.png" style="width: 100px;">
+							<img class="wow fadeIn img-circle center-block" src="img/navin.png" style="width: 100px;">
 							<p class="text-center txt-dark-blue"><b>Dr. Navin Ramachandran</b></p>
 							<br>
 
@@ -92,7 +98,7 @@
 							<h3 class="text-center txt-dark-blue title">Key of Success</h3>
 							<br>
 							<div class="text-center">
-								<i class="fa fa-comments fa-3x txt-dark-blue" aria-hidden="true"></i>
+								<i class="wow fadeIn fa fa-comments fa-3x txt-dark-blue" aria-hidden="true"></i>
 							</div>
 							<br>
 							<p>This year, the Peach team has a strong emphasis on collaborating closely with other sub-teams. This was due to the sub-teams last year having their own opinions of the platforms or frameworks to work on, thus causing an issue when these components have to be combined together. So, this year, the sub-teams are required to select a framework as the standardized base to work on, and Electrode became the ultimate framework which sub-teams agreed upon. As we all are working on a common project, communication is also really important.</p>
@@ -107,18 +113,18 @@
 		 					<br>
 		 					<div class="marg-top-40 row">
 								<div class="col-md-4 col-xs-12">
-									<img class="img-circle center-block" src="img/ben.jpg" style="width: 100px;">
+									<img class="img-circle center-block wow fadeIn " src="img/ben.jpg" style="width: 100px;">
 
 									<h4 class="text-center">Ben Hadfield</h4>
 									<p class="text-center">UI Liaison</p>
 								</div>
 								<div class="col-md-4 col-xs-12">
-									<img class="img-circle center-block" src="img/julien.jpg" style="width: 100px;">
+									<img class="img-circle center-block wow fadeIn " src="img/julien.jpg" style="width: 100px;">
 									<h4 class="text-center">Julien Nahum</h4>
 									<p class="text-center">Team Leader</p>
 								</div>
 								<div class="col-md-4 col-xs-12">
-									<img class="img-circle center-block" src="img/sim.jpg" style="width: 100px;">
+									<img class="img-circle center-block wow fadeIn " src="img/sim.jpg" style="width: 100px;">
 
 									<h4 class="text-center">Sim Zi Jian</h4>
 									<p class="text-center">Research lead</p>
@@ -161,7 +167,7 @@
 
 							<div class="text-center">
 		 						<br>
-								<i class="fa fa-lightbulb-o fa-3x txt-dark-blue" aria-hidden="true"></i>
+								<i class=" wow fadeIn fa fa-lightbulb-o fa-3x txt-dark-blue" aria-hidden="true"></i>
 
 		 					</div>
 
@@ -251,7 +257,7 @@
 
 		 					<div class="text-center">
 		 						<br>
-								<i class="fa fa-list fa-3x txt-dark-blue" aria-hidden="true"></i>
+								<i class=" wow fadeIn fa fa-list fa-3x txt-dark-blue" aria-hidden="true"></i>
 
 		 					</div>
 
@@ -393,7 +399,7 @@
 
 		 					<div class="text-center">
 		 						<br>
-								<i class="fa fa-picture-o fa-3x txt-dark-blue" aria-hidden="true"></i>
+								<i class=" wow fadeIn fa fa-picture-o fa-3x txt-dark-blue" aria-hidden="true"></i>
 
 		 					</div>
 		 					<br>
@@ -419,7 +425,7 @@
 
 		 					<div class="text-center">
 		 						<br>
-								<i class="fa fa-sitemap fa-3x txt-dark-blue" aria-hidden="true"></i>
+								<i class=" wow fadeIn fa fa-sitemap fa-3x txt-dark-blue" aria-hidden="true"></i>
 
 		 					</div>
 		 					<br>
@@ -445,14 +451,14 @@
 
 		 					<div class="text-center">
 		 						<br>
-		 						<i class="fa fa-search fa-3x txt-dark-blue" aria-hidden="true"></i>
+		 						<i class=" wow fadeIn fa fa-search fa-3x txt-dark-blue" aria-hidden="true"></i>
 
 		 					</div>
 
 		 					<br>
 
 		 					<h4 class="txt-dark-blue text-center">Workflow Manager</h4>
-		 					<img class="center-block" src="img/workflow_icon.png" style="width:120px;">
+		 					<img class=" wow fadeIn center-block" src="img/workflow_icon.png" style="width:120px;">
 		 					
 		 					<p>
 							A workflow manager combines the usage of BPMN (Business Process Model Notation) diagrams with the organizing of workflow for the processes, allowing the application to present different medical forms to the user depending on which stage the user is in the process.  Initially, we looked through some open software workflow managers to have a clearer understand of how it functions. Some examples that we looked through were ProcessMaker, Activiti and Interstage. At the time, we were considering Node as the web framework for our application, so we found a few node packages that could help with the job. The “bpmn” module allows the illustration of process oriented business logic, which allows tasks to be arranged in a workflow. This would be ideal for Node.js as the interactions in this module is asynchronous, which is a distinct characteristic for Node. Another option that we found was the “wf” module, which is an ongoing open source project. This module also allows the orchestration of processes, allowing the programming of sequences of tasks, in our case, producing forms after an event is triggered or after a task is completed. Even though “wf” is a more specified module compared to “bpmn”, some functions are not specified as it as relatively new compared to “bpmn”. After deeper understanding of what a workflow manager does, and how large the scale of this component, we decided that our sub-team of three people is not sufficient to complete the component in the time given. After discussing this with our client, we decided to remove this component from the list of requirements. But this was still a notable research done, thus being listed here. </p>
@@ -460,7 +466,7 @@
 							<br>
 							
 							<h4 class="txt-dark-blue text-center">Frameworks</h4>
-							<img class="center-block" src="img/framework.png" style="width:100px;">
+							<img class=" wow fadeIn center-block" src="img/framework.png" style="width:100px;">
 							<br>
 		 					
 							<p>
@@ -468,7 +474,7 @@
 
 							<br>
 							<br>
-							<img src="img/react.png" style="width:100px;"><br>
+							<img class=" wow fadeIn " src="img/react.png" style="width:100px;"><br>
 							<b>ReactJS:</b> React is in fact a Javascript library, which allows interactive functions for the user interfaces. React focusses on a modular approach. In other terms, it encourages the reusing of React components across the application. React was initially considered the main front-end framework for our application, as the UCL Peach Cancer teams wanted a modern functional framework across all sub-teams.<br></p>
 
 							<div class="row">
@@ -497,7 +503,7 @@
 							<br>
 
 							
-							<img src="img/angular.png" style="width:100px;">
+							<img class=" wow fadeIn " src="img/angular.png" style="width:100px;">
 							<p><br>
 							<b>AngularJS:</b>
 
@@ -523,7 +529,7 @@
 							</div></div>
 
 							<br>
-							<img src="img/node.png" style="width:100px;">	
+							<img class=" wow fadeIn " src="img/node.png" style="width:100px;">	
 							<p>
 							<b>NodeJS:</b>
 							NodeJS is a Javascript runtime which uses event-driven, non-blocking I/O model making it quite unique. This allows Node to be more efficient and lightweight compared to other frameworks. It combines a little of both front-end and back-end functionalities. As a team, we initially had a thought of using a combination of React and Node as the structure for our application. Thus, we researched deeper into what Node can provide to us.
@@ -544,7 +550,7 @@
 							</div>
 
 							<br>
-							<img src="img/electrode-logo.svg" style="width:100px;">	
+							<img class=" wow fadeIn " src="img/electrode-logo.svg" style="width:100px;">	
 							<p><br><b>ElectrodeJS:</b>
 							After several weeks of research, we as the UCL Peach Cancer team, decided to use ElectrodeJS as the ultimate framework for the web application. Electrode combines the front-end reusable aspects of React, the concepts of Flux in Redux, and the route management of the web servers of Node into a functional package. It also provides a standard way for us to write our code, clearly differentiating client-side code from the server-side code, allowing easier collaboration between sub-teams as Electrode code is way more readable compared to other available JS libraries. Electrode is well suited for our application, as our application requires lots of interactive code in the client-side, while still being able to retrieve data from an OPENEHR database and route views to the servers. Besides that, it helps us maintain our code, to be accessible by other sub-teams for further improvement. With the advantages of Electrode as shown below, we decided that Electrode was our optimal choice, and we will be using it in the development of the application.
 							<br><br><b>Pros of Electrode:</b>
@@ -575,6 +581,11 @@
 
 							<p>
 							After our team negotiated with the client, we agreed that creating a workflow manager is not a reasonable task given the time we have. This leaves us the option of hard-coding the workflow, essentially requiring us to research into the current business processes of UCLH. </p>
+							<br>
+							<h4 class="txt-dark-blue text-center">Testing</h4>
+
+							<p>
+							We needed to find a way to test our app through the development process. After few researches we found a node module named Mocha. Principle is fairly easy: we define unit test, implement them, and make sure our code pass the test. When the app progress, we can run all unit tests a once to verify that everything previously built is still working properly.</p>
 
 							<p><b><a data-toggle="collapse" data-target="#collapseExample">Click here to show sources</a></b></p>
 
@@ -621,6 +632,14 @@
 								  	</ul>
 								</p>
 
+								<p class="txt-dark-blue"><b>MochaJS</b></p>
+								<p>
+								  	<ul>
+								  		<li>Mocha official website: <a href="hhttps://mochajs.org/" target="_blank">https://mochajs.org/</a></li>
+								  	</ul>
+								</p>
+
+
 								<br>		
 
 								<p class="txt-dark-blue"><b>Electrode</b></p>
@@ -657,11 +676,11 @@
 
   				<div id="section-experiments" class="clearfix width-100">
 					<div class="col-xs-12 section-content ">
-	 					<h3 class="text-center txt-dark-blue title">Experiments</h3>
+	 					<h3 class="text-center txt-dark-blue title">Experiments - Protoypes</h3>
 
 	 					<div class="text-center">
 	 						<br>
-	 						<i class="fa fa-flask fa-3x txt-dark-blue" aria-hidden="true"></i>
+	 						<i class="wow fadeIn fa fa-flask fa-3x txt-dark-blue" aria-hidden="true"></i>
 
 	 					</div>
 
@@ -793,21 +812,21 @@
 						    <div class="panel-heading" role="tab" id="headingOne">
 						      <h4 class="panel-title">
 						        <a role="button" data-toggle="collapse" data-parent="#scheduler" href="#createEl" aria-expanded="true" aria-controls="collapseOne">
-						          Creating draggable elements
+						          Create a clickable version of patient to agenda
 						        </a>
 						      </h4>
 						    </div>
-						    <div id="createEl" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						    <div id="createEl" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>As we are going to have to to build react components that involves drag and drop we wanted to experiment with this feature.</p>
+						         	<p>As we are going to have to to build react components that involves drag and drop we wanted to experiment with this feature. We found a react library named React DnD (for drag&drop). With it, we built a very basic version of the patient drag and drop to agenda. As a first step, we made the patient move from one day to other simply by clicking the desired day.</p>
 						         	<p><b>Result:</b></p>
-						         	<p>...</p>
+						         	<img src="img/experiment2.2.gif" class="img-responsive center-block">
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>-</p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -820,7 +839,7 @@
 						    <div class="panel-heading" role="tab" id="headingTwo">
 						      <h4 class="panel-title">
 						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#scheduler" href="#createSpace" aria-expanded="false" aria-controls="collapseTwo">
-						          Creating spaces to drop draggable elements 
+						          Creating a draggable version of patient to agenda
 						        </a>
 						      </h4>
 						    </div>
@@ -828,13 +847,13 @@
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Create boxes or spaces for draggable elements to be dropped into</p>
+						         	<p>Finally, we implemented the drag and drop functionnality. These two experiments show that it is possible to drag patient to the meeting. We are going to use this same react library in the final product.</p>
 						         	<p><b>Result:</b></p>
-						         	<p>...</p>
+						         	<img src="img/experiment2.1.gif" class="img-responsive center-block">
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>-</p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -852,21 +871,22 @@
 						    <div class="panel-heading" role="tab" id="headingOne">
 						      <h4 class="panel-title">
 						        <a role="button" data-toggle="collapse" data-parent="#database" href="#accessViaElectrode" aria-expanded="true" aria-controls="collapseOne">
-						          Access a database with Electrode
+						          Create a Mongo Database
 						        </a>
 						      </h4>
 						    </div>
-						    <div id="accessViaElectrode" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						    <div id="accessViaElectrode" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 						      <div class="panel-body">
 						       	<div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Creating a local MongoDB database and accessing it using Electrode</p>
+						         	<p>Creating a local MongoDB database and connect to it via node.js and the module mongoose. This module allows us to create models and easily communicate with the database.</p>
 						         	<p><b>Result:</b></p>
-						         	<p>...</p>
+						         	<img src="img/experiment3.0.png" class="img-responsive center-block">
+
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>-</p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -879,7 +899,7 @@
 						    <div class="panel-heading" role="tab" id="headingTwo">
 						      <h4 class="panel-title">
 						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#AddRemEntry" aria-expanded="false" aria-controls="collapseTwo">
-						          Adding and removing database entries
+						          Create an API, part 1: POST entry
 						        </a>
 						      </h4>
 						    </div>
@@ -887,13 +907,14 @@
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Adding and removing entries from a local MongoDB database using Electrode</p>
+						         	<p>Adding an entry via the API.</p>
 						         	<p><b>Result:</b></p>
-						         	<p>...</p>
+						         	<img src="img/experiment3.1.png" class="img-responsive center-block">
+
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>-</p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -905,22 +926,103 @@
 						  <div class="panel panel-default">
 						    <div class="panel-heading" role="tab" id="headingTwo">
 						      <h4 class="panel-title">
-						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#SetupVM" aria-expanded="false" aria-controls="collapseTwo">
-						          Setting up database in VM
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#API1" aria-expanded="false" aria-controls="collapseTwo">
+						          Create an API, part 2: GET all, GET one
 						        </a>
 						      </h4>
 						    </div>
-						    <div id="SetupVM" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						    <div id="API1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>Setting up a MongoDB database in an Microsoft Azure Virtual Machine</p>
+						         	<p>Displaying all entries or only one if an id is specified.</p>
 						         	<p><b>Result:</b></p>
-						         	<p>...</p>
+						         	<img src="img/experiment3.2.png" class="img-responsive center-block">
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+						         	<p><b>Date:</b></p>
 						         	<p>-</p>
+						         	<p><b>Done By:</b></p>
+						         	<p>-</p>
+						         </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingT">
+						      <h4 class="panel-title">
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#API2" aria-expanded="false" aria-controls="collapseTwo">
+						          Create an API, part 3: PUT update an entry
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="API2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="panel-body">
+						        <div class="col-md-9">
+						         	<p><b>Description:</b></p>
+						         	<p>Updating an entry.</p>
+						         	<p><b>Result:</b></p>
+						         	<img src="img/experiment3.3.png" class="img-responsive center-block">
+						         </div>
+						         <div class="col-md-3">
+						         	<p><b>Status:</b></p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+						         	<p><b>Date:</b></p>
+						         	<p>-</p>
+						         	<p><b>Done By:</b></p>
+						         	<p>-</p>
+						         </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingTwo">
+						      <h4 class="panel-title">
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#API3" aria-expanded="false" aria-controls="collapseTwo">
+						          Create an API, part 4: DELETE an entry
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="API3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="panel-body">
+						        <div class="col-md-9">
+						         	<p><b>Description:</b></p>
+						         	<p>Deleting an entry.</p>
+						         	<p><b>Result:</b></p>
+						         	<img src="img/experiment3.4.png" class="img-responsive center-block">
+						         </div>
+						         <div class="col-md-3">
+						         	<p><b>Status:</b></p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+						         	<p><b>Date:</b></p>
+						         	<p>-</p>
+						         	<p><b>Done By:</b></p>
+						         	<p>-</p>
+						         </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingTwo">
+						      <h4 class="panel-title">
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#DEPLOY" aria-expanded="false" aria-controls="collapseTwo">
+						          Deploy API to Azure
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="DEPLOY" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="panel-body">
+						        <div class="col-md-9">
+						         	<p><b>Description:</b></p>
+						         	<p>Test Azure virtual machine by deploying the API for jobs list.</p>
+						         	<p><b>Result:</b></p>
+						         	VM was created. Waiting for deployment.
+						         </div>
+						         <div class="col-md-3">
+						         	<p><b>Status:</b></p>
+						         	<p>Pending...</p>
 						         	<p><b>Date:</b></p>
 						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
@@ -935,23 +1037,6 @@
 				
   				</div>
 
-  				<div id="section-prototype" class="clearfix width-100 gray">
-					<div class="col-xs-12 section-content gray">
-	 					<h3 class="text-center txt-dark-blue title">Prototype</h3>
-
-	 					<div class="text-center">
-	 						<br>
-	 						<i class="fa fa-code fa-3x txt-dark-blue" aria-hidden="true"></i>
-
-	 					</div>
-	 					<br>
-
-	 					<p>Coming soon (Note: add repo link + if deployed, final link)</p>
-
-
-					</div>		
-				
-  				</div>
 
   				<div id="section-documents" class="clearfix width-100">
 					<div class="col-xs-12 section-content ">
@@ -975,7 +1060,7 @@
 							<br>
 
 							<h4 class="txt-dark-blue">Testing and Experiments</h4>
-							After deciding on the framework used, we did some small tests on the framework. We tried little experiments using React to model the jobs list and scheduler, while using Node to access a database to model accessing the MPI (Master Patients Index). Other experiments were done using Electrode to familiarise ourselves with Electrode as a framework.
+							After deciding on the framework used, we did some small tests on the framework. We tried little experiments using React and node to prepare our work on the jobs list and the scheduler. We also tried to use databases, and connect them with node.js. Other experiments were done using Electrode to familiarise ourselves with the framework.
 							<br>
 
 							<h4 class="txt-dark-blue">PoC and Prototyping</h4>
@@ -1002,7 +1087,7 @@
 
 	 					<div class="text-center">
 	 						<br>
-	 						<i class="fa fa-file-text-o fa-3x txt-dark-blue" aria-hidden="true"></i>
+	 						<i class="wow fadeIn fa fa-file-text-o fa-3x txt-dark-blue" aria-hidden="true"></i>
 
 	 					</div>
 	 					<br>
