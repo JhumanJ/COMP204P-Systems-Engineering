@@ -220,6 +220,61 @@ p, li {
     box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
 }
 
+#separator-hci {
+	height: 40vh;
+	background-image: url('../img/separator-hci.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
+}
+
+#separator-archi {
+	height: 40vh;
+	background-image: url('../img/separator-archi.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
+}
+
+#separator-test {
+	height: 40vh;
+	background-image: url('../img/separator-test.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
+}
+
+#separator-eval {
+	height: 40vh;
+	background-image: url('../img/separator-eval.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
+}
+
+#separator-manage {
+	height: 40vh;
+	background-image: url('../img/separator-manage.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
+}
+
 /* architecture */
 
 #architecture {
