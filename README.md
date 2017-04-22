@@ -1,6 +1,8 @@
 # COMP204P Systems Engineering
 
-The project website for UCL COMP204P Team 35.
+This is the project website of UCL COMP204P Team 35.
+
+To see the website, just open the file index.html
 
 ##Team Members
 

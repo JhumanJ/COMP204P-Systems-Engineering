@@ -36,7 +36,7 @@
 
 			<!-- Sidebar -->
 
-  			<div class="col-sm-4 col-md-3 dark-blue sidebar height-100 hidden-xs" id="myNav">
+  			<div class="col-sm-4 col-md-3 dark-blue sidebar height-100 hidden-xs" id="myNav" >
 
   				<a href="#section-introduction"><img class="center-block mrg-top-25 logo" src="img/logo-white.svg" alt="logo"></a>
 
@@ -49,6 +49,13 @@
   					<li><a class="no-deco" href="#section-progress"><h4>PROGRESS</h4></a></li>
   					<li><a class="no-deco" href="#section-documents"><h4>DOCUMENTS</h4></a></li>
   				</ul>
+
+  				<div style="position: absolute; bottom:0px; left:50%;">
+  					<div style="position: relative; left: -50%;">
+  						<div><a target="_blank" href="https://github.com/JhumanJ/COMP204P-Systems-Engineering"><i class="fa fa-github fa-3x txt-white" aria-hidden="true"></i></div>
+  					</div>	
+  					
+  				</div>
   			</div>
 
   			<!-- Content -->
@@ -84,7 +91,7 @@
 		 					</div>
 		 					<br>
 							
-							<p>Currently, the health-care system relies heavily on paper to collect patient data. This is a slow, cumbersome, repetitive and error-prone way of collecting important information. The Peach Project aims to solve these problems and streamline this process by providing healthcare professionals with a digital platform form which to manage and organise data.</p>
+							<p>Currently, the health-care system relies heavily on paper to collect patient data. This is a slow, cumbersome, repetitive and error-prone way of collecting important information. The Peach Project aims to solve these problems and streamline this process by providing healthcare professionals with a digital platform form which to manage and organize data.</p>
 
 							<h3 class="text-center txt-dark-blue title">CLIENT</h3>
 
@@ -414,7 +421,7 @@
 		 						<p>At first, our client wanted us to code a worflow manager. We looked into it and tried to search useful ressources to make it. Unfortunately, we realize that it was a very complicated task, so we are simply going to hardcode the worflow of the app instead. The following mockup was done to represent the interface of the workflow manager.</p>
 		 						<img class="img-responsive" src="img/mockup2.png">
 		 						<br>
-		 						<p>The following mockup represents the interface where admin can manage meetings. Result of patient search appears below the calendar, and patients can be dragged to any meeting.</p>
+		 						<p>The following mockup represents the interface where an admin can manage meetings. Result of patient search appears below the calendar, and patients can be dragged to any meeting.</p>
 		 						<img class="img-responsive" src="img/mockup3.png">
 		 						<br>
 		 						<p>This last screen is where the MDT (multi-disciplinary team) coordinator assigns job to all of the teams member.</p>
@@ -430,7 +437,7 @@
 		 					</div>
 		 					<br>
 
-		 					<p>This is the global architecture of the application. Every subteams' app are interactiong with each other, and each subteams' app interracts with a general database. You can hover the picture to see the first drawing of it.</p>
+		 					<p>This is the global architecture of the application. Every subteams' app are interacting with each other, and each subteams' app interracts with a general database. You can hover the picture to see the first drawing of it.</p>
 
 		 					<div id="architecture">
 		 						 
@@ -461,7 +468,7 @@
 		 					<img class=" wow fadeIn center-block" src="img/workflow_icon.png" style="width:120px;">
 		 					
 		 					<p>
-							A workflow manager combines the usage of BPMN (Business Process Model Notation) diagrams with the organizing of workflow for the processes, allowing the application to present different medical forms to the user depending on which stage the user is in the process.  Initially, we looked through some open software workflow managers to have a clearer understand of how it functions. Some examples that we looked through were ProcessMaker, Activiti and Interstage. At the time, we were considering Node as the web framework for our application, so we found a few node packages that could help with the job. The “bpmn” module allows the illustration of process oriented business logic, which allows tasks to be arranged in a workflow. This would be ideal for Node.js as the interactions in this module is asynchronous, which is a distinct characteristic for Node. Another option that we found was the “wf” module, which is an ongoing open source project. This module also allows the orchestration of processes, allowing the programming of sequences of tasks, in our case, producing forms after an event is triggered or after a task is completed. Even though “wf” is a more specified module compared to “bpmn”, some functions are not specified as it as relatively new compared to “bpmn”. After deeper understanding of what a workflow manager does, and how large the scale of this component, we decided that our sub-team of three people is not sufficient to complete the component in the time given. After discussing this with our client, we decided to remove this component from the list of requirements. But this was still a notable research done, thus being listed here. </p>
+							A workflow manager combines the usage of BPMN (Business Process Model Notation) diagrams with the organizing of workflow for the processes, allowing the application to present different medical forms to the user depending on which stage the user is in the process.  Initially, we looked through some open software workflow managers to have a clearer understand of how it functions. Some examples that we looked through were ProcessMaker, Activity and Interstage. At the time, we were considering Node as the web framework for our application, so we found a few node packages that could help with the job. The “bpmn” module allows the illustration of process oriented business logic, which allows tasks to be arranged in a workflow. This would be ideal for Node.js as the interactions in this module is asynchronous, which is a distinct characteristic for Node. Another option that we found was the “wf” module, which is an ongoing open source project. This module also allows the orchestration of processes, allowing the programming of sequences of tasks, in our case, producing forms after an event is triggered or after a task is completed. Even though “wf” is a more specified module compared to “bpmn”, some functions are not specified as it as relatively new compared to “bpmn”. After deeper understanding of what a workflow manager does, and how large the scale of this component, we decided that our sub-team of three people is not sufficient to complete the component in the time given. After discussing this with our client, we decided to remove this component from the list of requirements. But this was still a notable research done, thus being listed here. </p>
 
 							<br>
 							
@@ -712,10 +719,8 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Julien - Sim</p>
 						         </div>
 						         
 
@@ -741,10 +746,8 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Julien - Sim</p>
 						         </div>
 						      </div>
 						    </div>
@@ -761,17 +764,15 @@
 						      <div class="panel-body">
 						        <div class="col-md-9">
 						         	<p><b>Description:</b></p>
-						         	<p>This step consits of deleting element of the list. We added little clickable cross next to each element to delete that.</p>
+						         	<p>This step consists of deleting element of the list. We added little clickable cross next to each element to delete that.</p>
 						         	<p><b>Result:</b></p>
 						         	<p><img class="img-responsive center-block"  src="img/experiment-3.png"></p>
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Julien - Sim</p>
 						         </div>
 						      </div>
 						    </div>
@@ -795,8 +796,6 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Pending...</p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
 						         	<p>-</p>
 						         </div>
@@ -827,10 +826,8 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Sim</p>
 						         </div>
 						      </div>
 						    </div>
@@ -854,10 +851,8 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Sim</p>
 						         </div>
 						      </div>
 						    </div>
@@ -887,10 +882,8 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Julien</p>
 						         </div>
 						      </div>
 						    </div>
@@ -914,11 +907,8 @@
 						         </div>
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
-						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
-						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>						         	<p><b>Done By:</b></p>
+						         	<p>Julien</p>
 						         </div>
 						      </div>
 						    </div>
@@ -942,10 +932,8 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Julien</p>
 						         </div>
 						      </div>
 						    </div>
@@ -969,10 +957,8 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Julien</p>
 						         </div>
 						      </div>
 						    </div>
@@ -996,10 +982,8 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
-						         	<p>-</p>
+						         	<p>Julien</p>
 						         </div>
 						      </div>
 						    </div>
@@ -1023,10 +1007,89 @@
 						         <div class="col-md-3">
 						         	<p><b>Status:</b></p>
 						         	<p>Pending...</p>
-						         	<p><b>Date:</b></p>
-						         	<p>-</p>
 						         	<p><b>Done By:</b></p>
 						         	<p>-</p>
+						         </div>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<h4 class="txt-dark-blue text-center">Electrode</h4>
+
+	 					<div class="panel-group" id="electrode" role="tablist" aria-multiselectable="true">
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingOne">
+						      <h4 class="panel-title">
+						        <a role="button" data-toggle="collapse" data-parent="#electrode" href="#electrode1" aria-expanded="true" aria-controls="collapseOne">
+						          Job List
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="electrode1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						      <div class="panel-body">
+						        <div class="col-md-9">
+						         	<p><b>Description:</b></p>
+						         	<p>This is the job list component, and is responsible for displaying a list of the user’s current jobs and to provide the ability for jobs to be deleted, marked as complete, edited and added.</p>
+						         	<p><b>Result:</b></p>
+						         	<img src="img/experiment4.png" class="img-responsive center-block">
+						         	<p>The job list is functional, however, there is a strange bug affecting the behaviour of the delete function. Although the delete function updates the redux store correctly, that change does not seem to be interpreted correctly by React, which always removes the last job as opposed to the specific one deleted. This ill need more debug work to fix.</p>
+						         </div>
+						         <div class="col-md-3">
+						         	<p><b>Status:</b></p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+						         	<p><b>Done By:</b></p>
+						         	<p>Ben</p>
+						         </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingOne">
+						      <h4 class="panel-title">
+						        <a role="button" data-toggle="collapse" data-parent="#electrode" href="#electrode2" aria-expanded="true" aria-controls="collapseOne">
+						          PropTypes
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="electrode2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						      <div class="panel-body">
+						        <div class="col-md-9">
+						         	<p><b>Description:</b></p>
+						         	<p>PropTypes is a inbuilt static type checker in React, which can help us check that the correct property types are being passed to a given component. Since JavaScript is dynamically typed, this functionality is especially useful.</p>
+						         	<p><b>Result:</b></p>
+						         	<p>This functionality can help us find potential bugs and improve the stability of out application. It is also helpful in that a developer can quickly glance at a components prop types and see both what props are expected and their respective types.</p>
+						         </div>
+						         <div class="col-md-3">
+						         	<p><b>Status:</b></p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+						         	<p><b>Done By:</b></p>
+						         	<p>Ben</p>
+						         </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingOne">
+						      <h4 class="panel-title">
+						        <a role="button" data-toggle="collapse" data-parent="#electrode" href="#electrode3" aria-expanded="true" aria-controls="collapseOne">
+						          Redux
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="electrode3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						      <div class="panel-body">
+						        <div class="col-md-9">
+						         	<p><b>Description:</b></p>
+						         	<p>Redux involves holding all state associated with an application is one single global object. Importantly, this object is immutable. In order to respond to a user interaction, we emit an action, for example ADD JOB. That action has a particular ID and potentially a payload containing data. For ADD JOB that data would be the title of the new job. This action is passed to  a reducer which is responsible for taking the current state, along with the action, and returning a new state object which has been changed in such a way so that the action has an effect. For ADD JOB that would be adding the specified job to the state.</p>
+						         	<p><b>Result:</b></p>
+						         	<p>By implementing redux we have found that having all state in a single JavaScript object has certain advantages. For one, that object can be stored in local storage in the browser, meaning that the user’s application loads quickly upon return. Additionally, it’s forced us to adopt an explicit coding style when it comes to actions. Since all actions available in the application are defined in a single file, it is quick to check what functionality is available and this can prevent us writing functionally similar code.</p>
+						         </div>
+						         <div class="col-md-3">
+						         	<p><b>Status:</b></p>
+						         	<p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+						         	<p><b>Done By:</b></p>
+						         	<p>Ben</p>
 						         </div>
 						      </div>
 						    </div>
@@ -1038,7 +1101,7 @@
   				</div>
 
 
-  				<div id="section-documents" class="clearfix width-100">
+  				<div id="section-progress" class="clearfix width-100">
 					<div class="col-xs-12 section-content ">
 	 					<h3 class="text-center txt-dark-blue title">Progress</h3>
 
@@ -1064,7 +1127,7 @@
 							<br>
 
 							<h4 class="txt-dark-blue">PoC and Prototyping</h4>
-							In this stage, we began working on our Proof of Concept, while creating a mini Electrode jobs list to prove that this concept is indeed possible. Our sub-team also decided to use an Azure virtual machine to deploy this prototype. We will proceed to showing this prototype to our client for his feedback so that we could further improve it.
+							In this stage, we began working on our Proof of Concept, while creating a mini Electrode jobs list to prove that this concept is indeed possible. Our sub-team is currently trying to deploy the app on Azure virtual machine. We will proceed to showing this prototype to our client for his feedback so that we could further improve it.
 							<br>
 
 							<h4 class="txt-dark-blue">Development</h4>
