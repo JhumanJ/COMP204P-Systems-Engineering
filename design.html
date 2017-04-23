@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>UCL Peach Project | Team 35</title>
+
+	    <!-- Favicon -->
+	    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+	    <!-- Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Lora:400,700|Open+Sans:300,400,700" rel="stylesheet">
+
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/style.css">
+
+	    <!-- SCRIPT -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  	<script src="js/wow.js"></script>
+	    <script src="js/script.js"></script>
+	    <script type="text/javascript">
+	    	new WOW().init();
+	    </script>
+
+  	</head>
+	<body data-spy="scroll" data-target="#myNav" data-offset="20">
+
+  		<div class="menu-xs visible-xs">
+  			<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+  		</div>
+
+  		<div id="page">
+
+			<!-- Sidebar -->
+
+  			<div class="col-sm-4 col-md-3 dark-blue sidebar height-100 hidden-xs" id="myNav" >
+
+  				<a href="index.html"><img class="center-block mrg-top-25 logo" src="img/logo-white.svg" alt="logo"></a>
+
+  				<ul class="mrg-top-25 mrg-left-40 nav">
+                    <li><a class="no-deco" href="index.html"><h4>HOME</h4></a></li>
+  					<li><a class="no-deco" href="requirements.html"><h4>REQUIREMENTS</h4></a></li>
+  					<li><a class="no-deco" href="research.html"><h4>RESEARCH</h4></a></li>
+  					<li><a class="no-deco" href="hci.html"><h4>HCI</h4></a></li>
+  					<li><a class="no-deco" href="#section-design"><h4>DESIGN</h4></a></li>
+                    <li><a class="no-deco" href="testing.html"><h4>TESTING</h4></a></li>
+                    <li><a class="no-deco" href="evaluation.html"><h4>EVALUATION</h4></a></li>
+                    <li><a class="no-deco" href="management.html"><h4>MANAGEMENT</h4></a></li>
+  					<li><a class="no-deco" href="documents.html"><h4>DOCUMENTS</h4></a></li>
+  				</ul>
+
+  				<div style="position: absolute; bottom:0px; left:50%;">
+  					<div style="position: relative; left: -50%;">
+  						<div><a target="_blank" href="https://github.com/JhumanJ/COMP204P-Systems-Engineering"><i class="fa fa-github fa-3x txt-white" aria-hidden="true"></i></a></div>
+  					</div>
+
+  				</div>
+  			</div>
+
+  			<!-- Content -->
+
+  			<div class="height-100" id="content">
+  				<div class="col-sm-8 col-md-9 col-sm-offset-4 col-md-offset-3 height-100 no-pad">
+
+                    <div id="separator-archi">
+
+                    </div>
+
+
+      				<div id="section-design" class="clearfix width-100">
+    					<div class="col-xs-12 section-content col-sm-10 col-sm-offset-1">
+    	 					<h3 class="text-center txt-dark-blue title">DESIGN</h3>
+
+    	 					<div class="text-center">
+    	 						<br>
+    	 						<i class="fa fa-cog fa-3x txt-dark-blue" aria-hidden="true"></i>
+    	 					</div>
+
+                            <br/>
+
+                            <p><a data-toggle="collapse" data-target="#collapseExperiments">Click here to show experiments done during first term</a></p>
+
+                            <div class="collapse" id="collapseExperiments">
+                                <br />
+                                <p>Click to expand any.</p>
+
+                                <br>
+
+                                <h4 class="txt-dark-blue text-center">Node.js</h4>
+
+                                <div class="panel-group" id="jobs" role="tablist" aria-multiselectable="true">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                      <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#jobs" href="#displayTask" aria-expanded="true" aria-controls="collapseOne">
+                                          Adding tasks
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="displayTask" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+
+                                         <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>We designed a simple todo-list app to learn how to use node and its different modules. We used express (a node must-have), body parser (to fetch data transmitted via forms), and cookie-session to store user's todo list. The first thing done was to add tasks to users' session. The goal here was to get familiar with node, express framework, routing, and to experiments with forms.</p>
+                                            <p><b>Result:</b></p>
+                                            <img class="img-responsive center-block"  src="img/experiment-1.png">
+                                            <p>We believe that this small app helped us learn more about this technology. These experiments can be really useful for all of our requirements. Indeed, it involves basic but essential things such as forms handling or routing.</p>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Julien - Sim</p>
+                                         </div>
+
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#jobs" href="#addingTask" aria-expanded="false" aria-controls="collapseTwo">
+                                          Listing tasks
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="addingTask" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>After tasks were done we needed to be able to display them. More details about the to-do list available in the first tab.</p>
+                                            <p><b>Result:</b></p>
+                                            <p><img class="img-responsive center-block"  src="img/experiment-2.png"></p>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Julien - Sim</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#jobs" href="#remTask" aria-expanded="false" aria-controls="collapseThree">
+                                          Removing tasks
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="remTask" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>This step consists of deleting element of the list. We added little clickable cross next to each element to delete that.</p>
+                                            <p><b>Result:</b></p>
+                                            <p><img class="img-responsive center-block"  src="img/experiment-3.png"></p>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Julien - Sim</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#jobs" href="#assignTask" aria-expanded="false" aria-controls="collapseThree">
+                                          Assigning tasks
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="assignTask" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Assign task to another user.</p>
+                                            <p><b>Result:</b></p>
+                                            <p>...</p>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Pending...</p>
+                                            <p><b>Done By:</b></p>
+                                            <p>-</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <h4 class="txt-dark-blue text-center">React</h4>
+
+                                <div class="panel-group" id="scheduler" role="tablist" aria-multiselectable="true">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                      <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#scheduler" href="#createEl" aria-expanded="true" aria-controls="collapseOne">
+                                          Create a clickable version of patient to agenda
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="createEl" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>As we are going to have to to build react components that involves drag and drop we wanted to experiment with this feature. We found a react library named React DnD (for drag&drop). With it, we built a very basic version of the patient drag and drop to agenda. As a first step, we made the patient move from one day to other simply by clicking the desired day.</p>
+                                            <p><b>Result:</b></p>
+                                            <img src="img/experiment2.2.gif" class="img-responsive center-block">
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Sim</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#scheduler" href="#createSpace" aria-expanded="false" aria-controls="collapseTwo">
+                                          Creating a draggable version of patient to agenda
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="createSpace" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Finally, we implemented the drag and drop functionnality. These two experiments show that it is possible to drag patient to the meeting. We are going to use this same react library in the final product.</p>
+                                            <p><b>Result:</b></p>
+                                            <img src="img/experiment2.1.gif" class="img-responsive center-block">
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Sim</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <h4 class="txt-dark-blue text-center">Database</h4>
+
+                                <div class="panel-group" id="database" role="tablist" aria-multiselectable="true">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                      <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#database" href="#accessViaElectrode" aria-expanded="true" aria-controls="collapseOne">
+                                          Create a Mongo Database
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="accessViaElectrode" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Creating a local MongoDB database and connect to it via node.js and the module mongoose. This module allows us to create models and easily communicate with the database.</p>
+                                            <p><b>Result:</b></p>
+                                            <img src="img/experiment3.0.png" class="img-responsive center-block">
+
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Julien</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#AddRemEntry" aria-expanded="false" aria-controls="collapseTwo">
+                                          Create an API, part 1: POST entry
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="AddRemEntry" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Adding an entry via the API.</p>
+                                            <p><b>Result:</b></p>
+                                            <img src="img/experiment3.1.png" class="img-responsive center-block">
+
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>						         	<p><b>Done By:</b></p>
+                                            <p>Julien</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#API1" aria-expanded="false" aria-controls="collapseTwo">
+                                          Create an API, part 2: GET all, GET one
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="API1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Displaying all entries or only one if an id is specified.</p>
+                                            <p><b>Result:</b></p>
+                                            <img src="img/experiment3.2.png" class="img-responsive center-block">
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Julien</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingT">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#API2" aria-expanded="false" aria-controls="collapseTwo">
+                                          Create an API, part 3: PUT update an entry
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="API2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Updating an entry.</p>
+                                            <p><b>Result:</b></p>
+                                            <img src="img/experiment3.3.png" class="img-responsive center-block">
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Julien</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#API3" aria-expanded="false" aria-controls="collapseTwo">
+                                          Create an API, part 4: DELETE an entry
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="API3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Deleting an entry.</p>
+                                            <p><b>Result:</b></p>
+                                            <img src="img/experiment3.4.png" class="img-responsive center-block">
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Julien</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#database" href="#DEPLOY" aria-expanded="false" aria-controls="collapseTwo">
+                                          Deploy API to Azure
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="DEPLOY" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Test Azure virtual machine by deploying the API for jobs list.</p>
+                                            <p><b>Result:</b></p>
+                                            VM was created. Waiting for deployment.
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Pending...</p>
+                                            <p><b>Done By:</b></p>
+                                            <p>-</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <h4 class="txt-dark-blue text-center">Electrode</h4>
+
+                                <div class="panel-group" id="electrode" role="tablist" aria-multiselectable="true">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                      <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#electrode" href="#electrode1" aria-expanded="true" aria-controls="collapseOne">
+                                          Job List
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="electrode1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>This is the job list component, and is responsible for displaying a list of the user’s current jobs and to provide the ability for jobs to be deleted, marked as complete, edited and added.</p>
+                                            <p><b>Result:</b></p>
+                                            <img src="img/experiment4.png" class="img-responsive center-block">
+                                            <p>The job list is functional, however, there is a strange bug affecting the behaviour of the delete function. Although the delete function updates the redux store correctly, that change does not seem to be interpreted correctly by React, which always removes the last job as opposed to the specific one deleted. This ill need more debug work to fix.</p>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Ben</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                      <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#electrode" href="#electrode2" aria-expanded="true" aria-controls="collapseOne">
+                                          PropTypes
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="electrode2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>PropTypes is a inbuilt static type checker in React, which can help us check that the correct property types are being passed to a given component. Since JavaScript is dynamically typed, this functionality is especially useful.</p>
+                                            <p><b>Result:</b></p>
+                                            <p>This functionality can help us find potential bugs and improve the stability of out application. It is also helpful in that a developer can quickly glance at a components prop types and see both what props are expected and their respective types.</p>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Ben</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                      <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#electrode" href="#electrode3" aria-expanded="true" aria-controls="collapseOne">
+                                          Redux
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="electrode3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                        <div class="col-md-9">
+                                            <p><b>Description:</b></p>
+                                            <p>Redux involves holding all state associated with an application is one single global object. Importantly, this object is immutable. In order to respond to a user interaction, we emit an action, for example ADD JOB. That action has a particular ID and potentially a payload containing data. For ADD JOB that data would be the title of the new job. This action is passed to  a reducer which is responsible for taking the current state, along with the action, and returning a new state object which has been changed in such a way so that the action has an effect. For ADD JOB that would be adding the specified job to the state.</p>
+                                            <p><b>Result:</b></p>
+                                            <p>By implementing redux we have found that having all state in a single JavaScript object has certain advantages. For one, that object can be stored in local storage in the browser, meaning that the user’s application loads quickly upon return. Additionally, it’s forced us to adopt an explicit coding style when it comes to actions. Since all actions available in the application are defined in a single file, it is quick to check what functionality is available and this can prevent us writing functionally similar code.</p>
+                                         </div>
+                                         <div class="col-md-3">
+                                            <p><b>Status:</b></p>
+                                            <p>Done <i class="fa fa-check" aria-hidden="true"></i></p>
+                                            <p><b>Done By:</b></p>
+                                            <p>Ben</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+
+
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">SYSTEM ARCHITECTURE</h3>
+                            <br />
+                            <img src="img/architecture.png" class="center-block" style="width:100px;"/>
+                            <p>
+                                <p>
+                                    At the onset of the project we were keen to use a React framework to unify and promote consistency across the multiple development teams working on PEACH. To this end we selected Electrode, from WalmartLabs. Electrode is a universal React platform with support for universal javascript and server side rendering of react components.
+                                    <br />    <br />
+                                    However, we encountered several issues with the framework, including strange bugs which prevented bundles from generating and difficulties deploying to Azure. Alongside this the framework called for a huge number of dependencies, resulting in  bloated bundle sizes and the Electrode team were slow to respond to issues raised on GibHub and eventually stopped responding. Because there wasn't much documentation available and it seemed pretty unstable, we decided it was time to drop Electrode too. However, we wanted to keep using a framework because we did not want to have to re-invent the wheel for problems that frameworks had already fixed (e.g. SSR / HTML caching).
+                                        <br />    <br />
+                                    After researching we decided to use a relatively new framework called Next.js, from Zeit. Version 2.0 had just been released and after hearing excellent reviews (alongside an impressive 12,000 stars on GitHub) we decided to commit to switching. Next uses react as well, but is only a front-end framework, so a lot of work was required to move from electrode to Next. We had to refactor all our components because the css rendering was totally different, and we had to separate back-end and front-end. So we created another node app that uses express.js to build our own API.
+                                        <br />    <br />
+
+                                <br /><br /><b>Front-End main components:</b><br />
+                                </p>
+                                <ul>
+                                    </li><li><b>Referral</b><br />
+                                This allows users to create referral forms for patients, so that they will be discussed in MDT meetings. Users will be able to search through patients or create new patients, and when the form is submitted, the information about the patient would be then sent to the OpenEHR database.
+                                </li>
+                                <li><b>Case Preparation</b><br />
+                                This component allows doctors to search for patients and add notes about them prior to an MDT meeting. Currently, the notes are fixed as the endpoint for this has not been set up in the OpenEHR by the Peach team.
+                                </li><li><b>Confirmation</b><br />
+                                This page allows patients to be assigned to doctors after an MDT meeting is complete. This job would then show up in the JobsList page. Furthermore, doctors would be able to see the notes that were made during the meetings, and add on notes of their own after the meeting. Currently, this feature is unavailable as the endpoint for gathering notes from meetings has not been provided to us.
+                                    </li><li><b>JobsList</b><br />
+                                The jobs list displays all the jobs that were assigned to each doctor after the MDT meeting is complete. This list allows users to look through their active jobs, and delete the ones that they have completed.
+                                    </li><li><b>Scheduler</b><br />
+                                This component allows users to assign patients to meetings via drag-and-drop. It retrieves the information of patients from the OpenEHR database after a referral has been made for the patient. By assigning the patients or removing them from the meetings, the database on the server would then update accordingly. Users will also be able to find out more about the meetings and the patients that are currently assigned in the respective meetings.
+                                    </ul>
+                                    <br /><br />
+                                <p>
+                                <br /><b>Back-End main components:</b><br />
+                                    <ul><li>
+                                    The back-end uses express, a node.js lightweight framework. Express is used for routes, and request are distributed among different objects (one for each table) that are responsible for mysql queries. All the our objects have at least the 4 CRUD (create, read, updatea nd delete) methods and more if needed. In total, there are 37 endpoints!
+                                    </li></ul>
+                                </p>
+                            </p>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">COMPONENT DIAGRAM (Front-end)</h3>
+
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <img  class="img-responsive" src="img/component-diagram.png"/>
+                                </div>
+                            </div>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">OBJECT DIAGRAM (Back-end)</h3>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <img  class="img-responsive" src="img/object-diagram.png"/>
+                                </div>
+                            </div>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">DESIGN PATTERN</h3>
+                            <p>
+                                Throughout the development of this application, a lot of design patterns were used to provide simpler and better solutions to the problems we had.
+                                <br/><br/><b>State</b><br/>
+                                With react and redux as the main front-end framework, we used “states” in React and “stores” in Redux to encapsulate the internal states of the application. This was really helpful as certain components have to behave according to the current internal states. For example, a “user-type” class was created to model the various types of users like, Admin and Normal User. This would then decide if the referral form could be submitted or not, as it only works if the user is signed in as an admin.
+                                <br/><br/><b>Iterator</b><br/>
+                                The iterator pattern was used constantly as many arrays were used to store values and variables. This allowed us to run methods and operations on all the elements while traversing through the array. The use of axios.all() in the Scheduler component helped provide an array of GET requests, then iterate through the array to run all the GET requests simultaneously and getting the required data for the patients.
+                                <br/><br/><b>Singleton</b><br/>
+                                This application relies a lot on storing information. Instead of having multiple databases each storing values of their respective components, we have a singular database which handles all the information coming and going out from the application. This fulfils the singleton property as it makes managing data transfer easier, which helps the development of the app significantly.
+                                <br/><br/><b>Façade</b><br/>
+                                The idea of using this design pattern is inherited by the use of React and Redux as the front-end framework. React and Redux relies on components encapsulating other smaller components, which makes the final integration and routing of the application easy, as only the main “Parent” class is required for the routing process. For example, the “Jobs List” component consists of an entire subsystem of components and classes required for it to work, but we only need the “Jobs List” component file location to route it with the entire application.
+                                <br/><br/><b>Mediator</b><br/>
+                                While creating a database-centralised application, this design pattern was crucial to our development. The use of NodeJS, MySQL and Express for the server side, combined with Axios and Fetch for the client side to provide API calls to the database made sure that changes on the front-end would be registered at the backend. This allows constant communication between the database and the front-end, ensuring data are in sync with each other.
+                                <br/><br/><b>Bridge</b><br/>
+                                This pattern is consistently used as Redux was one of the frameworks for the app. Redux utilises “Stores”, “Reducers” and “Actions” to separate the implementation of the components from the interface, which is stored as “Container” components. This separates the appearance of the components from the actual behavioural code, making it easy to single out bugs during development.
+                            </p>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">SEQUENCE DIAGRAM</h3>
+                            <img src="img/sequence-diagram.png" class="img-responsive" />
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">DATABASE STRUCTURE</h3>
+                            <p>
+                                As discussed before, we use the openEHR API to store confidential information. Our own database is used for to store functional data, such as patient assignments to meetings. Here is the database structure:
+                                <br />
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <img class="img-responsive" src="img/database-structure.png" />
+                                    </div>
+                                </div>
+                            </p>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">Development tools</h3>
+                            <br />
+                            <p>As our team is part of a bigger team, there are tools that we are required to use. For the PEACH global team, we use Ryver to communicate among teams, as it allows to have full history of messages (Slack doesn't provide this feature for free). History of messages is crucial as the project will most likely be carried forward to students next year for further progress. Also, Ryver acts as a platform for more experienced people to guide us through the process, offering us help whenever we needed it. For our source code, we used GitLab to create private repositories. This is very useful to check other sub-teams' code, as all of our work are depending on each other. Besides that, a Google Drive directory was set up for us by the client to share information and files regarding the application, for example the standard procedures of the registration of a patient, and the specifications and requirements of the application.
+    						<br><br>
+    						 Internally to the team, we focussed on using Github as a repository to store our source code and record our progress. This prompted us to set up our private Git to store information regarding the website, and the progress of our components. Facebook Messenger is our main way of communication. We also set up a Google Drive to store files or information regarding the project such as notes and bi-weekly reports. For coding, our main tools are text editors (Atom, Sublime Text, and Microsoft Visual Studio), and react developer tools.
+    						</p>
+
+    						<p class="text-center txt-dark-blue"><i class="fa fa-google fa-2x" aria-hidden="true"></i>
+    						 <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> <i class="fa fa-gitlab fa-2x" aria-hidden="true"></i>
+    						 <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+    						 </p>
+
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">Implementation Details</h3>
+                            <p>
+                                <ul>
+                                    <li>
+                                        <b>User Role:</b><br />
+                                        We implemented simple role based access functionality by leveraging the global state provided by Redux. To do this we store the current user’s details in the redux store upon login like this:
+                                        <br /><br />
+                                        <div class="row" style="text-align: center;">
+                                                <div class="code">user:
+                                                    {
+                                                       name: ‘James Baldwin’,
+                                                       role: ‘admin’,
+                                                       loading: false,
+                                                       error: false,
+                                                    }
+                                                </div>
+                                        </div>
+                                        <br />We can then perform simple conditional checks upon the user’s role to determine application access.
+
+                                    </li>
+                                    <br /><br />
+                                    <li>
+                                        <b>Jobs List:</b><br />
+                                        The jobs list is simple in conception, but utilises some cool techniques to provide a responsive UX.
+                                        The jobs list is made up of two key parts, the List component and the Job component. The List is responsible for data fetching, whilst the Job component is concerned only with styling.
+                                        <br />
+                                        The List component performs an initial API request to get an array of jobs. It adds this array to the Redux store and maps over that array to produce an array of Job components, each passed the details for an individual job. That list of Job components is then rendered to the DOM.
+                                        <br />
+                                        To create a responsive UX when the user clicks the delete button,
+                                        we store a loadingJob field in redux. This field specifies which, if any, job is undergoing some work. We can then use that data to change the visual style of a Job to instantly respond to the user and indicate that the system is working.
+                                        <br /><br />
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <img class="img-responsive" src="img/job-delete.gif" />
+                                            </div>
+                                        </div>
+                                        <br />
+                                        A similar technique is used when the user clicks the refresh button. We simply set the loading field to true, and hook up the refresh button and all Jobs components to enter the loading state when loading is true.
+
+                                        <br /><br />
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <img class="img-responsive" src="img/job-refresh.gif" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </p>
+
+
+
+    					</div>
+
+      				</div>
+
+
+                </div>
+
+
+  			</div>
+
+  		</div>
+
+  	</body>
+</html>

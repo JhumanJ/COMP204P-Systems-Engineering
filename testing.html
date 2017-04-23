@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>UCL Peach Project | Team 35</title>
+
+	    <!-- Favicon -->
+	    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+	    <!-- Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Lora:400,700|Open+Sans:300,400,700" rel="stylesheet">
+
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/style.css">
+
+	    <!-- SCRIPT -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  	<script src="js/wow.js"></script>
+	    <script src="js/script.js"></script>
+	    <script type="text/javascript">
+	    	new WOW().init();
+	    </script>
+
+  	</head>
+	<body data-spy="scroll" data-target="#myNav" data-offset="20">
+
+  		<div class="menu-xs visible-xs">
+  			<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+  		</div>
+
+  		<div id="page">
+
+			<!-- Sidebar -->
+
+  			<div class="col-sm-4 col-md-3 dark-blue sidebar height-100 hidden-xs" id="myNav" >
+
+  				<a href="index.html"><img class="center-block mrg-top-25 logo" src="img/logo-white.svg" alt="logo"></a>
+
+  				<ul class="mrg-top-25 mrg-left-40 nav">
+                    <li><a class="no-deco" href="index.html"><h4>HOME</h4></a></li>
+  					<li><a class="no-deco" href="requirements.html"><h4>REQUIREMENTS</h4></a></li>
+  					<li><a class="no-deco" href="research.html"><h4>RESEARCH</h4></a></li>
+  					<li><a class="no-deco" href="hci.html"><h4>HCI</h4></a></li>
+  					<li><a class="no-deco" href="design.html"><h4>DESIGN</h4></a></li>
+                    <li><a class="no-deco" href="#section-testing"><h4>TESTING</h4></a></li>
+                    <li><a class="no-deco" href="evaluation.html"><h4>EVALUATION</h4></a></li>
+                    <li><a class="no-deco" href="management.html"><h4>MANAGEMENT</h4></a></li>
+  					<li><a class="no-deco" href="documents.html"><h4>DOCUMENTS</h4></a></li>
+  				</ul>
+
+  				<div style="position: absolute; bottom:0px; left:50%;">
+  					<div style="position: relative; left: -50%;">
+  						<div><a target="_blank" href="https://github.com/JhumanJ/COMP204P-Systems-Engineering"><i class="fa fa-github fa-3x txt-white" aria-hidden="true"></i></a></div>
+  					</div>
+
+  				</div>
+  			</div>
+
+  			<!-- Content -->
+
+  			<div class="height-100" id="content">
+  				<div class="col-sm-8 col-md-9 col-sm-offset-4 col-md-offset-3 height-100 no-pad">
+
+                    <div id="separator-test"></div>
+
+                    <div id="section-testing" class="clearfix width-100">
+                        <div class="col-xs-12 section-content col-sm-10 col-sm-offset-1">
+                            <h3 class="text-center txt-dark-blue title">TESTING</h3>
+
+                            <div class="text-center">
+                                <br>
+                                <i class="wow fadeIn fa fa-file-text-o fa-3x txt-dark-blue" aria-hidden="true"></i>
+
+                            </div>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">Unit and integration testing</h3>
+                            <p>
+                                During first term our researchs led us to Mocha.js for testing. However, after we started to actually build the application, we found out that using more specific tests tools was easier and more efficient.
+                                <br />
+                                </br/><b>Front-end</b><br/>
+                                We are using Jest to power our test suite. Jest is a testing framework developed at Facebook. We chose Jest because of its zero-configuration setup and powerful features like parallel testing and automatic code coverage reporting. Additionally, Jest uses AirBnb’s testing library, Enzyme, behind the scenes which allows for a simple and highly readable syntax. Below is an example of a unit test running.
+                            </p>
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <img class="img-responsive" src="img/enzyme.gif"/>
+                                    </div>
+                                </div>
+                            <p>
+                                </br>
+
+                                <br />
+                                </br/><b>Back-end</b><br/>
+                                We are using Frisby.js to power our api test suite. Frisby.js is a testing framework specially designed to test endpoints. It is very easy to ease, and to define several test expectations such as: the response, the response header, the response status. The only problem we had was that frisby doesnt natively support modern http request such as delete or put. We had to modify our API and allow X-HTTP-Method-Override headers, so that olders and forms can still use our restful API.<br /><br />
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <img class="img-responsive" src="img/back-end-test.gif"/>
+                                    </div>
+                                </div>
+                            </p>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">User acceptance testing</h3>
+                            <p>
+                                For each version of the app, alongside our own testing, we also performed user testing by sending the application to our client for review. Ryver was a really useful tool for this. Without having to meet our client, we could get feeback in less than a day, and apply changes really quickly. This additional layer of testing was particularly good at capturing UX problems.
+                                <br />
+                                For the restful API we used Postman. It allowed us to test our 37 endpoints! This was really useful while developing the front-end components. We created a Postman collection which is easily exportable, that we did put in our repository.
+
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <img class="img-responsive" src="img/postman.png"/>
+                                    </div>
+                                </div>
+                            </p>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">Compatibility testing </h3>
+                            <p>
+                                We performed compatibility testing to check that the application functioned properly across browsers and devices (excluding mobile). For instance, it was during one of these tests that we discovered that the login dropdown did not work in Firefox. This led us to research the issue and add additional CSS to combat this browser specific bug.
+                            </p>
+                            <br />
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <img class="img-responsive" src="img/browsers.png" />
+                                </div>
+                            </div>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">Responsive design  testing </h3>
+                            <p>
+                                Our responsive design testing was focussed on ensuring the application performs well across various devices. Whilst we are not targeting mobile in this project, we still want to check the application is usable on tablets and touch enabled computers. This form of testing let us to remove several UX interactions which relied on mouse hover events to work. By replacing these with click/tap events we found that usability increased across all devices without a significant drop in UX.
+                            </p>
+                            <br />
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <img class="img-responsive" src="img/responsive.png" />
+                                </div>
+                            </div>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">Performance design  testing </h3>
+                            <p>
+                                Next.js is a slim framework, and we noticed a ~75% reduction in the size of our node_modules folder. Next.js performs automatic bundle splitting, using the file-system as the API, meaning that the home page only downloads the JavaScript required to run that page. Other pages are then either prefetched in the background or requested dynamically. When coupled with SSR, we saw a very snappy response time. (On Regular 3G with a 5x CPU slowdown the time to first paint was for Next.js was 1.72s vs Electrode’s 2.8s).
+                                <br /><br />
+                                Frisby.js which we use for back-end application testing is also configured to expect define response time. Therefore, if for some reasons the api was significantly slowed down, we would be notified.
+                            </p>
+
+                            <br />
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <img class="img-responsive" src="img/performance.png" />
+                                </div>
+                            </div>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">Security testing </h3>
+                            <p>
+                                Another peach team was responsible for the user authentification. They delivered the component late, and we couldn't integrate it. However, we used react redux to simulate some users, and use these users to limit the access to the different pages of our app. The access to openEHR API is also restricted, and everytime a user connect to our app, he is automatically connected to the openEHR API. This allows our user to request and post confidential information on EHR.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    </div>
+
+
+  			</div>
+
+  		</div>
+
+  	</body>
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>UCL Peach Project | Team 35</title>
+
+	    <!-- Favicon -->
+	    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+	    <!-- Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Lora:400,700|Open+Sans:300,400,700" rel="stylesheet">
+
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/style.css">
+
+	    <!-- SCRIPT -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  	<script src="js/wow.js"></script>
+	    <script src="js/script.js"></script>
+	    <script type="text/javascript">
+	    	new WOW().init();
+	    </script>
+
+  	</head>
+	<body data-spy="scroll" data-target="#myNav" data-offset="20">
+
+  		<div class="menu-xs visible-xs">
+  			<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+  		</div>
+
+  		<div id="page">
+
+			<!-- Sidebar -->
+
+  			<div class="col-sm-4 col-md-3 dark-blue sidebar height-100 hidden-xs" id="myNav" >
+
+  				<a href="index.html"><img class="center-block mrg-top-25 logo" src="img/logo-white.svg" alt="logo"></a>
+
+  				<ul class="mrg-top-25 mrg-left-40 nav">
+                    <li><a class="no-deco" href="index.html"><h4>HOME</h4></a></li>
+  					<li><a class="no-deco" href="requirements.html"><h4>REQUIREMENTS</h4></a></li>
+  					<li><a class="no-deco" href="#section-research"><h4>RESEARCH</h4></a></li>
+  					<li><a class="no-deco" href="hci.html"><h4>HCI</h4></a></li>
+  					<li><a class="no-deco" href="design.html"><h4>DESIGN</h4></a></li>
+                    <li><a class="no-deco" href="testing.html"><h4>TESTING</h4></a></li>
+                    <li><a class="no-deco" href="evaluation.html"><h4>EVALUATION</h4></a></li>
+                    <li><a class="no-deco" href="management.html"><h4>MANAGEMENT</h4></a></li>
+  					<li><a class="no-deco" href="documents.html"><h4>DOCUMENTS</h4></a></li>
+  				</ul>
+
+  				<div style="position: absolute; bottom:0px; left:50%;">
+  					<div style="position: relative; left: -50%;">
+  						<div><a target="_blank" href="https://github.com/JhumanJ/COMP204P-Systems-Engineering"><i class="fa fa-github fa-3x txt-white" aria-hidden="true"></i></a></div>
+  					</div>
+
+  				</div>
+  			</div>
+
+  			<!-- Content -->
+
+  			<div class="height-100" id="content">
+  				<div class="col-sm-8 col-md-9 col-sm-offset-4 col-md-offset-3 height-100 no-pad">
+
+                    <div id="separator-1"></div>
+
+                    <div id="section-research" class="clearfix width-100">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 section-content ">
+                            <h3 class="text-center txt-dark-blue title">Research</h3>
+
+                            <div class="text-center">
+                                <br>
+                                <i class=" wow fadeIn fa fa-search fa-3x txt-dark-blue" aria-hidden="true"></i>
+
+                            </div>
+
+                            <h3 class="txt-dark-blue title">First Term Research</h3>
+
+                            <br>
+
+                            <h4 class="txt-dark-blue text-center">Workflow Manager</h4>
+                            <img class=" wow fadeIn center-block" src="img/workflow_icon.png" style="width:120px;">
+
+                            <p>
+                            A workflow manager combines the usage of BPMN (Business Process Model Notation) diagrams with the organizing of workflow for the processes, allowing the application to present different medical forms to the user depending on which stage the user is in the process.  Initially, we looked through some open software workflow managers to have a clearer understand of how it functions. Some examples that we looked through were ProcessMaker, Activity and Interstage. At the time, we were considering Node as the web framework for our application, so we found a few node packages that could help with the job. The “bpmn” module allows the illustration of process oriented business logic, which allows tasks to be arranged in a workflow. This would be ideal for Node.js as the interactions in this module is asynchronous, which is a distinct characteristic for Node. Another option that we found was the “wf” module, which is an ongoing open source project. This module also allows the orchestration of processes, allowing the programming of sequences of tasks, in our case, producing forms after an event is triggered or after a task is completed. Even though “wf” is a more specified module compared to “bpmn”, some functions are not specified as it as relatively new compared to “bpmn”. After deeper understanding of what a workflow manager does, and how large the scale of this component, we decided that our sub-team of three people is not sufficient to complete the component in the time given. After discussing this with our client, we decided to remove this component from the list of requirements. But this was still a notable research done, thus being listed here. </p>
+
+                            <br>
+
+                            <h4 class="txt-dark-blue text-center">Frameworks</h4>
+                            <img class=" wow fadeIn center-block" src="img/framework.png" style="width:100px;">
+                            <br>
+
+                            <p>
+                            As a team, we investigated several front-end and back-end frameworks before ultimately making the decision to use Electrode. Amongst the front-end frameworks considered were React, Angular, and the back-end servers was Node JS. In the end, in order to standardise the means of coding for every subteam in the Peach Cancer Team, we voted on using Electrode as the main framework. Electrode is a combination of React, Redux and Node, allowing programmers to combine both front-end and back-end source code into a singular directory, making it easier for other programmers to collaborate upon it.  For our sub-team, this would allow us to produce front-end components that would be able to retrieve patients’ data from the OpenEHR database provided by the other sub-teams of the project. Specifics of the research can be found in the Research folder below.<br>
+
+                            <br>
+                            <br>
+                            <img class=" wow fadeIn " src="img/react.png" style="width:100px;"><br>
+                            <b>ReactJS:</b> React is in fact a Javascript library, which allows interactive functions for the user interfaces. React focusses on a modular approach. In other terms, it encourages the reusing of React components across the application. React was initially considered the main front-end framework for our application, as the UCL Peach Cancer teams wanted a modern functional framework across all sub-teams.<br></p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <p>
+                                        <b>Pros of React:</b>
+                                        <ul>
+                                            <li>Components can be reused easily.</li>
+                                            <li>React can act as an alternative, or alongside other JS libraries.</li>
+                                            <li>Will automatically update UI changes.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <p>
+                                        <b>Cons:</b>
+                                        <ul>
+                                            <li>Hard to integrate React into other MVC frameworks.</li>
+                                            <li>Each component has to be styled individually.</li>
+                                            <li>No router or model management libraries in React, requiring programmers to find other libraries to do that.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                </div>
+                            </div>
+                            <br>
+
+
+                            <img class=" wow fadeIn " src="img/angular.png" style="width:100px;">
+                            <p><br>
+                            <b>AngularJS:</b>
+
+                            AngularJS is also a Javascript front-end framework, allowing programmers to use HTML as a template language to express the components more clearly. It introduces data binding, which is a unique way to eliminate excessive code. This framework was investigated as an alternative to React, as the front-end of the application due to the easier management of code.</p>
+
+                            <div class="row"><div class="col-sm-6 col-xs-12">
+                                <p><b>Pros of AngularJS:</b>
+                                <ul>
+                                    <li>Expressive, thus needing less code for the same result compared to other libraries.</li>
+                                    <li>Allows data-binding between the model and the view.</li>
+                                    <li>Good for apps with large amounts of interactive client-side code.</li>
+                                </ul></p>
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                                <p>
+                                <b>Cons:</b>
+                                <ul>
+                                    <li>Not much documentation, as it’s a relatively new framework</li>
+                                    <li>Router function is limited</li>
+                                    <li>Some Angular are quite complex, takes time to learn</li>
+                                </ul>
+                                </p>
+                            </div></div>
+
+                            <br>
+                            <img class=" wow fadeIn " src="img/node.png" style="width:100px;">
+                            <p>
+                            <b>NodeJS:</b>
+                            NodeJS is a Javascript runtime which uses event-driven, non-blocking I/O model making it quite unique. This allows Node to be more efficient and lightweight compared to other frameworks. It combines a little of both front-end and back-end functionalities. As a team, we initially had a thought of using a combination of React and Node as the structure for our application. Thus, we researched deeper into what Node can provide to us.
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <p><b>Pros of NodeJS:</b></p>
+                                        <ul><li>Well established framework. Documentation are up-to-date and easy to find.</li>
+                                        <li>Server-side and client-side functionalities share the same piece of code</li>
+                                        <li>It’s built to handle concurrent requests due to its asynchronous event drive I/O</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                <p><b>Cons:</b></p>
+                                    <ul><li>Using a callback results in tons of nested callbacks</li>
+                                    <li>Not suited for CPU-intensive tasks, only suitable for web servers</li>
+                                    <li>Does not scale well</li></ul>
+                                </div>
+                            </div>
+
+                            <br>
+                            <img class=" wow fadeIn " src="img/electrode-logo.svg" style="width:100px;">
+                            <p><br><b>ElectrodeJS:</b>
+                            After several weeks of research, we as the UCL Peach Cancer team, decided to use ElectrodeJS as the ultimate framework for the web application. Electrode combines the front-end reusable aspects of React, the concepts of Flux in Redux, and the route management of the web servers of Node into a functional package. It also provides a standard way for us to write our code, clearly differentiating client-side code from the server-side code, allowing easier collaboration between sub-teams as Electrode code is way more readable compared to other available JS libraries. Electrode is well suited for our application, as our application requires lots of interactive code in the client-side, while still being able to retrieve data from an OPENEHR database and route views to the servers. Besides that, it helps us maintain our code, to be accessible by other sub-teams for further improvement. With the advantages of Electrode as shown below, we decided that Electrode was our optimal choice, and we will be using it in the development of the application.
+                            <br><br><b>Pros of Electrode:</b>
+                            <ul><li>Reusable code. This allows consistency across the code, allowing the best practices of code to be done.</li>
+                            <li>Performance. Electrode Caching and Profiling allows SSR (server side rendering) to be supported, enhancing performances of the application.</li>
+                            <li>Streamlined development cycle. With several technologies and configurations required in each development, Electrode allows these technologies to be streamlined into a single package, allowing developers to focus on building the app instead of working on how to combine these several technologies.</li>
+                            <li>Powerful tools. Electrode provides several tools which are useful in the development of the application. Electrode Explorer enables the discovery of reusable components, avoiding the writing of excessive repeated code. Electrify and Bundle Analyzer helps optimize Javascript bundles, and can exist independently to the application, making development more convenient.</li></ul>
+                            </p>
+
+                            <br>
+                            <h4 class="txt-dark-blue text-center">Scheduler</h4>
+
+                            <p>
+                            As specified, this scheduler acts as a calendar which allows admins to assign available patients to the weekly-held MDT (Multi Disciplinary Team) meetings. For this, our team found an open-source project of a functional calendar based on React code, which can be configured and reused for our application’s purpose. Our client also specified a drag-and-drop interface, allowing admins to essentially drag patient’s profiles and drop them into the calendar. Through research, we discovered a React library called “react-draggable” which allows elements to be dragged around.
+                            Jobs List
+                            The jobs list allow patients to be assigned to doctors at the end of each MDT meeting. The profile of these patients will then appear in the dashboards of the doctor’s homepage. Node.js, being a web server, has several functions that makes this possible. With the RBAC (Role-Based Access Control) system created by another sub-team, we can specify a MDT coordinator with the task of assigning these patients to the doctors. With some research, we found an open-source Node library named “tasqueue” which allows the creation of users and the assignment of tasks to users, which will largely aid the development of the jobs list.
+                            Processes
+                            After our team negotiated with the client, we agreed that creating a workflow manager is not a reasonable task given the time we have. This leaves us the option of hard-coding the workflow, essentially requiring us to research into the current business processes of UCLH.</p>
+
+                            <br>
+                            <h4 class="txt-dark-blue text-center">Jobs List</h4>
+
+                            <p>
+                            The jobs list allow patients to be assigned to doctors at the end of each MDT meeting. The profile of these patients will then appear in the dashboards of the doctor’s homepage. Node.js, being a web server, has several functions that makes this possible. With the RBAC (Role-Based Access Control) system created by another sub-team, we can specify a MDT coordinator with the task of assigning these patients to the doctors. With some research, we found an open-source Node library named “tasqueue” which allows the creation of users and the assignment of tasks to users, which will largely aid the development of the jobs list.</p>
+
+                            <br>
+                            <h4 class="txt-dark-blue text-center">Processes</h4>
+
+                            <p>
+                            After our team negotiated with the client, we agreed that creating a workflow manager is not a reasonable task given the time we have. This leaves us the option of hard-coding the workflow, essentially requiring us to research into the current business processes of UCLH. </p>
+                            <br>
+                            <h4 class="txt-dark-blue text-center">Testing</h4>
+
+                            <p>
+                            We needed to find a way to test our app through the development process. After few researches we found a node module named Mocha. Principle is fairly easy: we define unit test, implement them, and make sure our code pass the test. When the app progress, we can run all unit tests a once to verify that everything previously built is still working properly.</p>
+
+
+                            <br/><br/>
+                            <h3 class="txt-dark-blue title">Second Term Research</h3>
+
+                            <p>
+                                <br/>
+                                <img class=" wow fadeIn " src="img/next.png" style="width:100px;">
+                                <br/><b>Electrode.JS -> Next.JS</b><br/>
+                                Initially we decided to use ElectrodeJS as the main framework for the application. But in the final stages of development, we found out that as Electrode was a fairly new project, the deployment was fairly unstable. We ran into a few problems while trying to deploy our app to the Azure VMs, and after several attempts to contact the Dev team of Electrode, we decided to look for other alternatives. A few examples of issues, were the retrieving of CSS stylesheets through GET requests, and the long compilation time through “gulp dev”.<br/>
+
+                                </br/>
+                                We eventually found Next.JS, a framework which was relatively easy to work with. The framework was well-documentated, and the compilation time for Next is way faster. Also, it easily combines Node and React/Redux, making it our first choice. The process of applying CSS is different, but it became easy after we familiarised ourselves with the framework. The deployment process was also smoother, which prompted us to migrate to Next.
+
+                                <br/>
+                                <br/>
+                                <img class=" wow fadeIn " src="img/mysql.png" style="width:100px;">
+                                <br/><b>MongoDB -> MySQL</b><br/>
+                                Initially we assumed that we needed the specific functions of MongoDB, but after a few weeks of development, we realised that MySQL was sufficient in storing information needed. Also, we were more familiar with the functionalities of MySQL.
+
+                                <br/>
+                                <br/><b>Axios and Fetch</b><br/>
+                                The use of Axios and Fetch was quite crucial in running asynchronous actions to retrieve data from our database and the OpenEHR database. These Javascript libraries focus on encapsulating HTTP methods for requests as promises, allowing us to do sequential actions after the data is retrieved.
+
+                                <br/>
+                                <br/><b>React-select</b><br/>
+                                When creating the referral form among other components, the ‘react-select’ library was useful in creating the drop-down selection required to search for patients in the database. This library was chosen as it is created by the React framework, which makes it compatible with the rest of our components.
+
+                                <br/>
+                                <img class=" wow fadeIn " src="img/airbnb.png" style="width:100px;">
+                                <br/><b>AirBnb Enzyme and Frisby</b><br/>
+                                These are some of the libraries that we used for testing the application. More can be seen under Testing
+                            </p>
+
+                            <br/><br/>
+                            <h3 class="txt-dark-blue title">SUMMARY OF FINAL DECISION</h3>
+
+                            <p>
+                                In the end, we used NextJS as the deployment process is smoother. MySQL was used as we didn’t need the specific functions of MongoDB like we initially thought we did. Finally, we used some external packages and libraries to achieve some functionalities in the application and perform some testing on the application.
+                            </p>
+
+                            <br/><br/>
+                            <h3 class="txt-dark-blue title">REFERENCES</h3>
+
+                            <div class="panel-group" id="references" role="tablist" aria-multiselectable="true">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="ref_workflow">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-workflow" aria-expanded="false" aria-controls="collapse-workflow">
+                                          Workflow Manager
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-workflow" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[1] BPMN Engine, <a href="https://www.npmjs.com/package/bpmn" target="_blank">“bpmn,” npm. [Online]. Available: https://www.npmjs.com/package/bpmn.</a></li>
+                                                  <li>[2] WF module, <a href="https://www.npmjs.com/package/wf" target="_blank">“wf,” npm. [Online]. Available: https://www.npmjs.com/package/wf.</a></li>
+                                                  <li>[3] ProcessMaker, <a href="https://github.com/colosa/processmaker" target="_blank">“colosa/processmaker,” GitHub, 11-May-2016. [Online]. Available: https://github.com/colosa/processmaker.</a></li>
+                                                  <li>[4] ProcessMaker main site, <a href="http://www.processmaker.com/" target="_blank">P. M. Inc., “ProcessMaker Inc.,” ProcessMaker. [Online]. Available: http://www.processmaker.com/.</a></li>
+                                                  <li>[5] Activiti, <a href="https://github.com/Activiti" target="_blank">“Activiti,” GitHub. [Online]. Available: https://github.com/Activiti.</a></li>
+                                                  <li>[6] Interstage Business Process Manager, <a href="https://interstagebpm.com/community/wiki/view/pageId/46/slug/interstage-business-process-manager" target="_blank">“Interstage Community - Interstage Business Process Manager,” Interstage Community - Interstage Business Process Manager. [Online]. Available: https://interstagebpm.com/community/wiki/view/pageId/46/slug/interstage-business-process-manager.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="ref_ReactJS">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-ReactJS" aria-expanded="false" aria-controls="collapse-ReactJS">
+                                          ReactJS
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-ReactJS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[7] React official documentation, <a href="https://facebook.github.io/react/" target="_blank">“A JavaScript library for building user interfaces - React,” facebook.github.io. [Online]. Available: https://facebook.github.io/react/. </a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="ref_AngularJS">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-AngularJS" aria-expanded="false" aria-controls="collapse-AngularJS">
+                                          AngularJS
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-AngularJS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[8] Angular official documentation, <a href="https://angularjs.org/" target="_blank">“AngularJS - Superheroic JavaScript MVW Framework,” AngularJS - Superheroic JavaScript MVW Framework. [Online]. Available: https://angularjs.org/.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="NodeJS">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-NodeJS" aria-expanded="false" aria-controls="collapse-NodeJS">
+                                          NodeJS
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-NodeJS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[9] Node documentation, <a href=" https://nodejs.org/en/" target="_blank">N. Foundation, “Node.js,” Node.js. [Online]. Available: https://nodejs.org/en/.</a></li>
+                                                  <li>[10] Node tutorial, <a href=" https://www.airpair.com/javascript/node-js-tutorial" target="_blank">“Node.js Tutorial”, Airpair.com.[Online]. Available: https://www.airpair.com/javascript/node-js-tutorial</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="MochaJS">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-MochaJS" aria-expanded="false" aria-controls="collapse-MochaJS">
+                                          MochaJS
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-MochaJS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[11] Mocha official website, <a href="https://mochajs.org/" target="_blank">“Mocha - the fun, simple, flexible JavaScript test framework,” Mocha - the fun, simple, flexible JavaScript test framework. [Online]. Available: https://mochajs.org/.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="Electrode">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-Electrode" aria-expanded="false" aria-controls="collapse-Electrode">
+                                          Electrode
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-Electrode" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[12] Electrode official website, <a href="http://www.electrode.io/" target="_blank">“core,” Electrode | Universal React and Node.js Application Platform @WalmartLabs Powered. [Online]. Available: http://www.electrode.io/.</a></li>
+                                                  <li>[13] WalmartLabs, <a href="https://medium.com/walmartlabs/introducing-electrode-an-open-source-release-from-walmartlabs-14b836135319#.b4plyb6c1" target="_blank"> A. Grigoryan, “Introducing Electrode, an open source release from @WalmartLabs,” Medium, 03-Oct-2016. [Online]. Available: https://medium.com/walmartlabs/introducing-electrode-an-open-source-release-from-walmartlabs-14b836135319#.b4plyb6c1.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="Scheduler">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-Scheduler" aria-expanded="false" aria-controls="collapse-Scheduler">
+                                          Scheduler
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-Scheduler" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[14] React calendar, <a href="https://github.com/react-component/calendar" target="_blank">react-component, “react-component/calendar,” GitHub, 21-Apr-2017. [Online]. Available: https://github.com/react-component/calendar.</a></li>
+                                                  <li>[15] React-draggable documentation, <a href="https://www.npmjs.com/package/react-draggable" target="_blank">“react-draggable,” npm. [Online]. Available: https://www.npmjs.com/package/react-draggable.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="JobsList">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-JobsList" aria-expanded="false" aria-controls="collapse-JobsList">
+                                          Jobs List
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-JobsList" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[16] Tasqueue documentation, <a href="https://github.com/GitbookIO/node-tasqueue" target="_blank">G. I. O., “GitbookIO/node-tasqueue,” GitHub, 07-Feb-2017. [Online]. Available: https://github.com/GitbookIO/node-tasqueue. </a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="AxiosFetch">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-AxiosFetch" aria-expanded="false" aria-controls="collapse-AxiosFetch">
+                                          Axios and Fetch
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-AxiosFetch" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[17] Axios official repository, <a href="https://github.com/mzabriskie/axios" target="_blank">M., “mzabriskie/axios,” GitHub, 15-Apr-2017. [Online]. Available: https://github.com/mzabriskie/axios.</a></li>
+                                                  <li>[18] Fetch API, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">“Using Fetch,” Mozilla Developer Network. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="NextJS">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-NextJS" aria-expanded="false" aria-controls="collapse-NextJS">
+                                          NextJS
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-NextJS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[19] NextJS official blog, <a href="https://zeit.co/blog/next" target="_blank">Next.js,” ZEIT – Next.js. [Online]. Available: https://zeit.co/blog/next.</a></li>
+                                                  <li>[20] Scotch.io next tutorial, <a href="https://scotch.io/tutorials/react-universal-with-next-js-server-side-react" target="_blank">N., “React Universal with Next.js: Server-side React,” Scotch. [Online]. Available: https://scotch.io/tutorials/react-universal-with-next-js-server-side-react</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="Back-End">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-Back-End" aria-expanded="false" aria-controls="collapse-Back-End">
+                                          Back-End
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-Back-End" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[21] Body parser repository, <a href="https://github.com/expressjs/body-parser" target="_blank">E., “expressjs/body-parser,” GitHub, 07-Mar-2017. [Online]. Available: https://github.com/expressjs/body-parser. </a></li>
+                                                  <li>[22] ExpressJS official's website, <a href="https://expressjs.com/" target="_blank">“Express - Node.js web application framework,” Express - Node.js web application framework. [Online]. Available: https://expressjs.com/</a></li>
+                                                  <li>[23] RestAPI Tutorial website, <a href="http://www.restapitutorial.com/" target="_blank">T. F. P. eCollege, “Learn REST: A RESTful Tutorial,” REST API Tutorial. [Online]. Available: http://www.restapitutorial.com/.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="MySQL">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-MySQL" aria-expanded="false" aria-controls="collapse-MySQL">
+                                          MySQL
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-MySQL" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[24] MySQL npm page, <a href="https://www.npmjs.com/package/mysql" target="_blank">“mysql,” npm. [Online]. Available: https://www.npmjs.com/package/mysql.</a></li>
+                                                  <li>[25] MySQL official's website, <a href="https://www.mysql.com/" target="_blank">“MySQL,” MySQL. [Online]. Available: https://www.mysql.com/</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="React-Select">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-React-Select" aria-expanded="false" aria-controls="collapse-React-Select">
+                                          React-Select
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-React-Select" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[26] React-Select official repository, <a href="https://github.com/JedWatson/react-select" target="_blank">J. W., “JedWatson/react-select,” GitHub, 30-Mar-2017. [Online]. Available: https://github.com/JedWatson/react-select.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="Testing">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-Testing" aria-expanded="false" aria-controls="collapse-Testing">
+                                          Testing
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-Testing" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[27] Airbnb Enzyme official documentation, <a href="http://airbnb.io/enzyme/docs/api/" target="_blank">“Enzyme,” API Reference | Enzyme. [Online]. Available: http://airbnb.io/enzyme/docs/api/.</a></li>
+                                                  <li>[28] Frisby API documentation, <a href="http://frisbyjs.com/docs/api/" target="_blank">V. Lucas, “Frisby.js API Documentation—Frisby.js,” Frisby.js API Documentation—Frisby.js. [Online]. Available: http://frisbyjs.com/docs/api/.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="deploy">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#references" href="#collapse-deploy" aria-expanded="false" aria-controls="collapse-deploy">
+                                          Azure Deployment
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-deploy" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                          <p>
+                                              <ul>
+                                                  <li>[29] Azure official documentation, <a href="https://docs.microsoft.com/en-us/azure/" target="_blank">T., “Microsoft Azure Documentation,” Microsoft Docs. [Online]. Available: https://docs.microsoft.com/en-us/azure/.</a></li>
+                                                  <li>[30] VM management in Azure, <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-vm" target="_blank">N., “Create and Manage Linux VMs with the Azure CLI,” Microsoft Docs. [Online]. Available: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-vm.</a></li>
+                                              </ul>
+                                          </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+  			</div>
+
+  		</div>
+
+  	</body>
+</html>

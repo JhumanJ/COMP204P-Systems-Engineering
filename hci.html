@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>UCL Peach Project | Team 35</title>
+
+	    <!-- Favicon -->
+	    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+	    <!-- Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Lora:400,700|Open+Sans:300,400,700" rel="stylesheet">
+
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/style.css">
+
+	    <!-- SCRIPT -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  	<script src="js/wow.js"></script>
+	    <script src="js/script.js"></script>
+	    <script type="text/javascript">
+	    	new WOW().init();
+	    </script>
+
+  	</head>
+	<body data-spy="scroll" data-target="#myNav" data-offset="20">
+
+  		<div class="menu-xs visible-xs">
+  			<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+  		</div>
+
+  		<div id="page">
+
+			<!-- Sidebar -->
+
+  			<div class="col-sm-4 col-md-3 dark-blue sidebar height-100 hidden-xs" id="myNav" >
+
+  				<a href="index.html"><img class="center-block mrg-top-25 logo" src="img/logo-white.svg" alt="logo"></a>
+
+  				<ul class="mrg-top-25 mrg-left-40 nav">
+                    <li><a class="no-deco" href="index.html"><h4>HOME</h4></a></li>
+  					<li><a class="no-deco" href="requirements.html"><h4>REQUIREMENTS</h4></a></li>
+  					<li><a class="no-deco" href="research.html"><h4>RESEARCH</h4></a></li>
+  					<li><a class="no-deco" href="#section-hci"><h4>HCI</h4></a></li>
+  					<li><a class="no-deco" href="design.html"><h4>DESIGN</h4></a></li>
+                    <li><a class="no-deco" href="testing.html"><h4>TESTING</h4></a></li>
+                    <li><a class="no-deco" href="evaluation.html"><h4>EVALUATION</h4></a></li>
+                    <li><a class="no-deco" href="management.html"><h4>MANAGEMENT</h4></a></li>
+  					<li><a class="no-deco" href="documents.html"><h4>DOCUMENTS</h4></a></li>
+  				</ul>
+
+  				<div style="position: absolute; bottom:0px; left:50%;">
+  					<div style="position: relative; left: -50%;">
+  						<div><a target="_blank" href="https://github.com/JhumanJ/COMP204P-Systems-Engineering"><i class="fa fa-github fa-3x txt-white" aria-hidden="true"></i></a></div>
+  					</div>
+
+  				</div>
+  			</div>
+
+  			<!-- Content -->
+
+  			<div class="height-100" id="content">
+  				<div class="col-sm-8 col-md-9 col-sm-offset-4 col-md-offset-3 height-100 no-pad">
+
+                    <div id="separator-hci"></div>
+
+      				<div id="section-hci" class="clearfix width-100">
+    					<div class="col-xs-12 section-content col-sm-10 col-sm-offset-1">
+    	 					<h3 class="text-center txt-dark-blue title">HCI</h3>
+
+    	 					<div class="text-center">
+    	 						<br>
+    	 						<i class="wow fadeIn fa fa-pencil fa-3x txt-dark-blue" aria-hidden="true"></i>
+
+    	 					</div>
+
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">MOCK-UPS</h3>
+
+                            <p><a data-toggle="collapse" data-target="#collapse-mockup">Click here to see first term Mock-ups.</a></p>
+                            <div class="collapse" id="collapse-mockup">
+                                <p>
+                                    Another sub-team in the PEACH project is responsible for the UI. They will provide us design guidelines, but also react components ready to use and integrate. However, we still have to build our specific component, such as the calendar, and decide ourselves the content organization of the sub-app we are building. Therefore, the team also designed some mock-ups in order to have a better understanding of the needs. <br>
+                                </p>
+                                <br>
+                                <p>This first one represents the personal scheduler. A doctor can see all the meetings he is involved in.</p>
+                                <img class="img-responsive" src="img/mockup1.png">
+                                <br>
+                                <p>At first, our client wanted us to code a worflow manager. We looked into it and tried to search useful ressources to make it. Unfortunately, we realize that it was a very complicated task, so we are simply going to hardcode the worflow of the app instead. The following mockup was done to represent the interface of the workflow manager.</p>
+                                <img class="img-responsive" src="img/mockup2.png">
+                                <br>
+                                <p>The following mockup represents the interface where an admin can manage meetings. Result of patient search appears below the calendar, and patients can be dragged to any meeting.</p>
+                                <img class="img-responsive" src="img/mockup3.png">
+                                <br>
+                                <p>This last screen is where the MDT (multi-disciplinary team) coordinator assigns job to all of the teams member.</p>
+                                <img class="img-responsive" src="img/mockup4.png">
+                            </div>
+
+                            <p>
+                                Before the actual implementations of the app, we had to do severals iterations of mock-ups and wireframes. For each iterration, we were sending our mockups to our client directly over ryver. Thanks to this, we were able to get feedback really quickly. We even collaborated with our client using google docs. Here is an extract of each of the iterrations.
+                            </p>
+
+                            <p>
+                                <b>First version of the mock-up <a target="_blank" href="pdf/mockup/v1.pdf">(Click here to see the full first version)</a>:</b>
+                            </p>
+
+                            <img class="img-responsive" src="img/mockup/referral1.png"/>
+                            <img class="img-responsive" src="img/mockup/scheduler1.png"/>
+
+                            <p>
+                                <br/>
+                                <b>Second version of the mock-up <a target="_blank" href="pdf/mockup/v2.pdf">(Click here to see the full secund version)</a>:</b>
+                            </p>
+
+                            <br/><img class="img-responsive" src="img/mockup/referral2.png"/>
+                            <br/><img class="img-responsive" src="img/mockup/scheduler2.png"/>
+                            <br/><img class="img-responsive" src="img/mockup/scheduler21.png"/>
+
+                            <p>
+                                <br/>
+                                <b>Third version of the mock-up <a target="_blank" href="pdf/mockup/v3.pdf">(Click here to see the full secund version)</a>:</b>
+                            </p>
+
+                            <br/><img class="img-responsive" src="img/mockup/referral3.png"/>
+
+
+                            <p>
+                                <br/>
+                                <b>Last version of the mock-up:</b>
+                            </p>
+
+                            <br/><img class="img-responsive" src="img/mockup/referral4.png"/>
+
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">HCI PRINCIPLES</h3>
+
+                            <p>
+                                While developing the app, we modified some components several times to follow the HCI principles, which makes it accessible to the potential users of the app.
+                                <br/><br/><b>Visibility</b><br/>
+                                The appearance of the app was made as simplistic as possible. We changed the location of the navigation bar initially from the top to the left, and made it significantly bigger, so that users can easily see the different available tabs.
+                                <br/><br/><b>Affordance</b><br/>
+                                We made several UI changes to make it obvious for users to understand how to use our app. Some components have basic instructions to make it obvious for users to use it. This includes the drag-and-drop scheduler, and the select form used to search for patients in the database.
+                                <br/><br/><b>Feedback</b><br/>
+                                Some components made notifications whenever an action is done. For example, using ‘react-notify-toast’, a notification pops up telling the user that the referral form has been submitted. Also, a spinner can be seen when the scheduler tries to load up the patients from the database.
+                                <br/><br/><b>Consistency</b><br/>
+                                The appearance of the app was hugely influenced by this principle. We decided to use React bootstrap to model our app so that it remains similar to other websites that people would regularly use. Certain bootstrap icons were also used consistently throughout the app to imply the same function. Besides that, the basic design and fonts of the overall app follows the design guide set by the Peach team, making every page consistent to each other.
+                                <br/><br/><b>Mapping</b><br/>
+                                The sidebar was changed several times. In the current version, the words in the selected tab on the sidebar turns yellow. This allows the user to know which section they are currently in.
+                                <br/><br/><b>Constraints</b><br/>
+                                Some constraints were implemented in terms of user types. For instance, the referral form can only be submitted when a user is logged in as an admin. This prevents users who have not logged in from accessing the functionalities of the app.
+                            </p>
+
+                            <br />
+                            <h3 class="text-center txt-dark-blue title">SCREENSHOTS</h3>
+                            </br>
+                            <p>
+                                You can visit the live appliation here: <a target="_blank" href="http://peachteam35.uksouth.cloudapp.azure.com/">http://peachteam35.uksouth.cloudapp.azure.com/</a>
+                            </p>
+                            </br>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <img class="img-responsive" src="img/screens/1.png" style="margin-bottom:20px;" />
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <img class="img-responsive" src="img/screens/2.png" style="margin-bottom:20px;"/>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <img class="img-responsive" src="img/screens/3.png" style="margin-bottom:20px;"/>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <img class="img-responsive" src="img/screens/4.png" style="margin-bottom:20px;"/>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                                    <img class="img-responsive" src="img/screens/5.png" style="margin-bottom:20px;"/>
+                                </div>
+                            </div>
+
+                            </div>
+
+      				</div>
+
+                </div>
+
+
+  			</div>
+
+  		</div>
+
+  	</body>
+</html>
