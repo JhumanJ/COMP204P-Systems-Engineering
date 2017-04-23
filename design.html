@@ -642,6 +642,24 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <br /><br />
+                                    <li>
+                                        <b>Scheduler:</b><br />
+                                        The scheduler component is built mainly from React, and is designed so that admins can assign patients who are referred to their respective meetings. The scheduler is made out of 2 main components, the PatientList and the Calendar.<br /><br />
+                                        <div class ="row">
+                                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                                <img src="img/screens/2.png" class="img-responsive"/>
+                                            </div>
+                                        </div><br />
+                                        The PatientList is responsible for displaying the list of patients. Before the scheduler is mounted, a GET request is made using Axios to the OpenEHR database to query the unassigned patients, before being displayed on the list. For better user experience, a spinner is displayed to show that the patients are still being loaded. The Patient component is used to model the patients in the list, and they are made drag-able by using the ‘react-dnd’ library. Users will be able to drag the patient and drop it into the desired meeting on the calendar. Besides that, the user can decide to remove the patient from the list, effectively terminating the process of the patient being referred.<br /><br />
+                                        The Calendar component is used to display the meetings and specialities of each day in the form of a typical calendar. Axios is used to retrieve the available meetings and specialities of those meetings for every month from the database, and these meetings will then be displayed in the cells of the calendar. These cells are represented by the Grid component. When a user drags a patient, the Grid is modified so that it detects when a dragged patient is dropped on it, and prompts the user to choose the meeting and speciality of the patient by displaying a modal. The meetings can then be clicked for users to view the specialities in the meetings and the current patients who are assigned to the meetings. A similar spinner is used to indicate that the patients are being loaded from the database. The user can then decide to remove the patient from the meeting, which places the patient back into the PatientList.<br /><br />
+                                        <div class ="row">
+                                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                                <img src="img/scheduler-gif.gif" class="img-responsive"/>
+                                            </div>
+                                        </div><br />
+                                        The meetings and patients are stored in the Calendar’s state, which allows patients and meetings to be rendered after the user assigns or removes patients from a meeting. Axios is then used to apply these updates to the database simultaneously.
+                                    </li>
                                 </ul>
                             </p>
 

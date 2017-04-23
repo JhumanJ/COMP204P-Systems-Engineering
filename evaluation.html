@@ -80,33 +80,349 @@
 
                                             <br />
                                             <h3 class="text-center txt-dark-blue title">SUmmary of Achievements</h3>
+
                                             <p>
-                                                {A table of requested functional requirements and user cases, priority, the completed status and contributors
-                                                ,Challenges and how you solve them
+                                                Below is a table of of requested functional requirements.
+                                            </p>
+
+                                            <div class="table-responsive" id="requirements-table">
+
+                    							    <table class="table table-hover table-striped">
+                    							        <thead>
+                    							        <tr>
+                    							            <th>ID</th>
+                    							            <th>Requirement</th>
+                    							            <th>Type</th>
+                    							            <th>Component</th>
+                    							            <th>Priority</th>
+                                                            <th>Status</th>
+                                                            <th>Contributors</th>
+                    							        </tr>
+                    							        </thead>
+                    							        <tbody>
+                    							        <tr>
+                    							            <th class="text-center">1</th>
+                    							            <td><b>Scheduler:</b> The scheduler component is bascially a personal agenda. Every medical staff will have its own agenda, reuniting the meetings he is involved in, his reminders... and possibly others.</td>
+                    							            <td class="text-center"><b>Category</b></td>
+                    							            <td class="text-center">Scheduler</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center"> Done </td>
+                                                            <td class="text-center"> Sim </td>
+                    							        </tr>
+                    							         <tr>
+                    							            <th class="text-center">1.1</th>
+                    							            <td>Scheduler shall have a nice and clear look, comparable to Google Calendar.</td>
+                    							            <td class="text-center">UI</td>
+                    							            <td class="text-center">Scheduler</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center"> Done </td>
+                                                            <td class="text-center"> Sim & Julien </td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">1.2</th>
+                    							            <td>Scheduler shall have the ability to hold meetings and reminders.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Scheduler</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center"> Done </td>
+                                                            <td class="text-center"> Sim </td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">1.3</th>
+                    							            <td>Admin shall be able to add/edit meetings.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Scheduler</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center"> Done </td>
+                                                            <td class="text-center"> Sim </td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">1.4</th>
+                    							            <td>Meetings shall have a start/end time.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Scheduler</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done </td>
+                                                            <td class="text-center"> Sim </td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">1.5</th>
+                    							            <td>Meetings shall have a list of attending team members.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Scheduler</td>
+                    							            <td class="text-center">Should</td>
+                                                            <td class="text-center"> - </td>
+                                                            <td class="text-center"> - </td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">1.6</th>
+                    							            <td>Patients shall be dragged and dropped into meetings by Admin.</td>
+                    							            <td class="text-center">UI</td>
+                    							            <td class="text-center">Scheduler</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Sim</td>
+                    							        </tr>
+                                                        <tr>
+                                                           <th class="text-center">1.7</th>
+                                                           <td>Several specialities shall be assign to meetings.</td>
+                                                           <td class="text-center">Functional</td>
+                                                           <td class="text-center">Scheduler</td>
+                                                           <td class="text-center">Must</td>
+                                                           <td class="text-center">Done</td>
+                                                           <td class="text-center">Sim</td>
+                                                       </tr>
+                                                       <tr>
+                                                          <th class="text-center">1.8</th>
+                                                          <td>Patients can be assigned to a particular speciality when assigned to a meeting.</td>
+                                                          <td class="text-center">Functional</td>
+                                                          <td class="text-center">Scheduler</td>
+                                                          <td class="text-center">Must</td>
+                                                          <td class="text-center">Done</td>
+                                                          <td class="text-center">Sim</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <th class="text-center">1.8</th>
+                                                         <td>Referred patients should be automatically be in the list of patients to assign.</td>
+                                                         <td class="text-center">Functional</td>
+                                                         <td class="text-center">Scheduler</td>
+                                                         <td class="text-center">Must</td>
+                                                         <td class="text-center">Done</td>
+                                                         <td class="text-center">Sim</td>
+                                                     </tr>
+                    							        <tr>
+                    							            <th class="text-center">2</th>
+                    							            <td><b>Patient Search:</b> Admin can search for patients in order to refer them.</td>
+                    							            <td class="text-center"><b>Category</b></td>
+                    							            <td class="text-center">Search</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Ben & Julien</td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">2.1</th>
+                    							            <td>Patients shall be searchable in real-time (without page reloading)</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Search</td>
+                    							            <td class="text-center">Should</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Ben</td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">2.2</th>
+                    							            <td>Admin shall be able to have a quick overview of patient history from the search result list.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Search</td>
+                    							            <td class="text-center">Should</td>
+                                                            <td class="text-center"> - </td>
+                                                            <td class="text-center"> - </td>
+                    							        </tr>
+                                                        <tr>
+                    							            <th class="text-center">2.3</th>
+                    							            <td>Users shall be able to create new patients.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Search</td>
+                    							            <td class="text-center">Should</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Julien</td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">3</th>
+                    							            <td><b>Jobs List:</b> MDT (Multi-disciplinary team) coordinator shall be able to asign jobs to other team member.</td>
+                    							            <td class="text-center"><b>Category</b></td>
+                    							            <td class="text-center">Jobs List</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Ben</td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">3.1</th>
+                    							            <td>MDT coordinator shall be able to search for other team members. Note: This couldn't be done as login done by another team couldn't be included on time.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Jobs List</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center"> - </td>
+                                                            <td class="text-center"> - </td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">3.2</th>
+                    							            <td>MDT coordinator shall be able to assign Jobs to team members.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Jobs List</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Ben</td>
+                    							        </tr>
+                                                        <tr>
+                    							            <th class="text-center">3.3</th>
+                    							            <td>MDT coordinator shall be able to delete Jobs.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Jobs List</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Ben</td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">4</th>
+                    							            <td><b>Workflow:</b> We looked into developing a workflow manager, but it revealed itself very complicated. We agreed with client on not doing it.</td>
+                    							            <td class="text-center"><b>Category</b></td>
+                    							            <td class="text-center">Worflow</td>
+                    							            <td class="text-center">Cancelled</td>
+                                                            <td class="text-center"> - </td>
+                                                            <td class="text-center"> - </td>
+                    							        </tr>
+                                                        <tr>
+                    							            <th class="text-center">5</th>
+                    							            <td><b>Referral:</b> The referral page is a massive form where MDT coordinators can refer new patients.</td>
+                    							            <td class="text-center"><b>Category</b></td>
+                    							            <td class="text-center">Referral</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Julien</td>
+                    							        </tr>
+                                                        <tr>
+                    							            <th class="text-center">5.1</th>
+                    							            <td>MDT coordinators should be able to search for patients and refer them.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Referral</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Ben & Julien</td>
+                    							        </tr>
+                                                        <tr>
+                    							            <th class="text-center">5.2</th>
+                    							            <td>MDT coordinators should be able to create new patients.</td>
+                    							            <td class="text-center">Functional</td>
+                    							            <td class="text-center">Referral</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Julien</td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">6</th>
+                    							            <td><b>UI:</b> The components built shall respecte the guidelines of the Peach project that may be find <a href="http://peach-design-guide.webflow.io" target="_blank">here</a>. Note: Guideline were not define in the end, so we agreed on layout with client.</td>
+                    							            <td class="text-center"><b>Category</b></td>
+                    							            <td class="text-center">UI</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Julien</td>
+                    							        </tr>
+                    							        <tr>
+                    							            <th class="text-center">7</th>
+                    							            <td><b>Integration:</b> The components built shall be easy to integrate to the PEACH Project. Note: As all the team lacked of team, no integration was done.</td>
+                    							            <td class="text-center"><b>Category</b></td>
+                    							            <td class="text-center">Integration</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center"> - </td>
+                                                            <td class="text-center"> - </td>
+                    							        </tr>
+                                                        <tr>
+                    							            <th class="text-center">7.1</th>
+                    							            <td><b>Architecture:</b> The application must respect have a maintainable architecture.</td>
+                    							            <td class="text-center">Architecture</td>
+                    							            <td class="text-center">Integration</td>
+                    							            <td class="text-center">Must</td>
+                                                            <td class="text-center">Done</td>
+                                                            <td class="text-center">Ben</td>
+                    							        </tr>
+                                                        <tr>
+                                                           <th class="text-center">8</th>
+                                                           <td><b>openEHR:</b> The application should be connected to the openEHR api. All private information about patients (such as age for instance), should only be stored there. Any required information in the app should be direclty pulled form openEHR.</td>
+                                                           <td class="text-center"><b>Category</b></td>
+                                                           <td class="text-center">API</td>
+                                                           <td class="text-center">Must</td>
+                                                           <td class="text-center">Done</td>
+                                                           <td class="text-center">Julien</td>
+                                                       </tr>
+                                                       <tr>
+                                                          <th class="text-center">9</th>
+                                                          <td><b>API:</b> The application should have its own api to be consumed by the different front-end components.</td>
+                                                          <td class="text-center"><b>Category</b></td>
+                                                          <td class="text-center">API</td>
+                                                          <td class="text-center">Must</td>
+                                                          <td class="text-center">Done</td>
+                                                          <td class="text-center">Julien</td>
+                                                      </tr>
+                                                       </tbody>
+                    							    </table>
+                                                </div>
+
+                                            <p>
+                                                <b>Challenges: </b>
+                                                <ul>
+                                                    <li>
+                                                        <b>Directory structure:</b> How to layout the directory structure of a scalable react application. Tutorials helped us taking these decisions.
+                                                    </li>
+                                                    <li>
+                                                        <b>Migrating Framework:</b> Even though we kept using a react framework, migrating from electrode.js to next.js presented a few challenges. The entire style of the application had to be rebuilt, refactor the folder structure, the routing system, migrating redux to work on both client and server, and others... Documentaiton of next.js was really helpful.
+                                                    </li>
+                                                    <li>
+                                                        <b>Asynchronous database calls:</b> We had to mix various different mySQL requests in order for the api to efficiently provide data to the scheduler. Working with asynchronous functions sometimes was difficult, and required us to work with a lot a call back functions.
+                                                    </li>
+                                                    <li>
+                                                        <b>Managing asynchronous http request: </b> the package we used, Axios, had some built-in functions allowing us to gather all the request before executing the callbacks, which helped us synchronized the code.
+                                                    </li>
+                                                    <li>
+                                                        <b>Understanding and efficiently using openEHR API: </b> Ian McNicoll organized a workshop for us where he taught us how to use the API, and explained us the various functionalities. Moreover he provided us with a Postman Collection filled with a lot of examples. Finally, when really stuck, we asked him for some help over Ryver, and he replied really quickly.
+                                                    </li>
+                                                </ul>
+                                            </p>
+
+                                            <p>
+                                                {
                                                 ,A list of known incomplete features and bugs
-                                                ,A table of work packages of term 2 and contributors
                                                 }
                                             </p>
 
                                             <br />
                                             <h3 class="text-center txt-dark-blue title">Critical evaluation of the project</h3>
+
+                                            <br /><br />
+                                            <div class ="row">
+                                                <div class="center-block" style="width:100px;">
+                                                    <img src="img/evaluation-icon.png" class="img-responsive"/>
+                                                </div>
+                                            </div><br />
+
                                             <p>
-                                                {Architecture design
-                                                , User interface design and user experience
-                                                , Functionality
-                                                , Stability
-                                                , Efficiency
-                                                , Compatibility
-                                                , Maintainability
-                                                , Evaluation of Testing
-                                                , Project management
-                                                }
+                                                <ul>
+                                                    <br />
+                                                    <li><b>Architecture design</b><br />
+                                                    The decision to separate the front-end components from the back-end ensures that code can be easily developed for them. Instead of using the openEHR database to store all the data, the app has its own database which stores meetings, specialities and jobs, allowing better accessibility to these information.
+                                                    </li><br /><li><b>UI design and UX</b><br />
+                                                    The current UI design of the app is the product of several iterations and feedback from our client. We made sure that our design was sleek and simplistic while also providing visibility to the users. The implementation of the Loader and spinners to indicate that data is being loaded, combined with the Sidebar to indicate which tab the user is currently in, aims to provide the best UX for the users.
+                                                    </li><br /><li><b>Functionality</b><br />
+                                                    Overall, the app successfully delivers in terms of easing the process from referring the patient to assigning the patient to a meeting, to finally assigning the patient to a doctor.
+                                                    It also fulfils some additional requirements like a search bar that searches through the patients from the database.
+                                                    </li><br /><li><b>Stability</b><br />
+                                                    The app does not undergo crashes, which is important considering it’s a medical application. Several precautions were made to ensure the database doesn’t overload, or that the app does not flood the databases with multiple HTTP requests at a time.
+                                                    </li><br /><li><b>Efficiency</b><br />
+                                                    In terms of efficiency, information from the local database and openEHR were retrieved in a short period of time, allowing users to acquire patients’ data quickly. In addition to that, the pages load without delay, providing users with a smoother experience while using the app.
+                                                    </li><br /><li><b>Compatibility</b><br />
+                                                    This app is built such that it is cross-browser, making it accessible from most internet browsers. The design was also made responsive to provide better viewing experience for users across difference devices. In terms of the functionality of the drag-and-drop, that functionality is currently not suited for touch screens, making it only restricted to certain devices.
+                                                    </li><br /><li><b>Maintainability</b><br />
+                                                    With the front-end code and back-end code separated, the app can be easily maintained. Also, during the development phase, a lot of emphasis was put in terms of the structure of folders, grouping components and their subcomponents in a subdirectory instead of randomly placing them. This allows future developers to easily locate the relevant files and work on them.
+                                                    </li><br /><li><b>Testing</b><br />
+                                                    Several unit tests were made for the components and the Node APIs of the app, which proved to be useful to us. We also prepared test cases for how the front-end interacts with the backend. Despite that, with the absence of time, not much testing was done on the entire app as a whole, which could be improved. Also, when testing, we did not consider the usage of mobile devices as an option.
+                                                    </li><br /><li><b>Project Management</b><br />
+                                                    The team worked well together, with the workload distributed evenly among the team members. Components and roles were assigned according to the strengths of the team members, and we had no issues when integrating our components. In retrospect, we could have given ourselves more time in terms of deployment, as we found out in the final stages of development, that there were some deployment issues while using Electrode. This resulted in us migrating to Next.js after several attempts to contact the dev team of Electrode. Also, the amount of testing of the app could be improved, as time was lost trying to migrate to Next.
+                                                    </li>
+                                                </ul>
                                             </p>
 
                                             <br />
                                             <h3 class="text-center txt-dark-blue title">Future work</h3>
                                             <p>
-                                                {How could the project be extended if you had another six months: recurring meetings, admin panel, more testing, add login, fully do confirmation and preparation, ask to implement the missing referral forms}
+                                                <br />
+                                                Peach is a vast but really interesting project. We all are very to have been part of it. Obiviously, due to the size of the project, a lot of tasks remains before having a fully working prototype. Here is a list of what we would have done with another 6 months:
+                                                <br />
+                                                <ul>
+                                                    <li><b>Build an admin panel:</b> To create and manage meetings, specialities, patients, ... The back-end is already built for that, but front-end still needs to be implemented.</li>
+                                                	<li><b>Login/Authentication:</b> Another team was responsible for the login component. They delivered it a bit too late for us to integrate it.</li>
+                                                	<li><b>Allow meetings to be recurring(weekly/monthly):</b> This specific behaviour could easily be implemented by modifiying the meeting_occurence table and adding a recurring attribute, but we lack of time and prioritized various functionalities instead.</li>
+                                                	<li><b>Improve the testing of the app:</b> We believe that our unit tests is efficient and does job perfectly. However, we didn't implement tests for all of our components, again we prioritized new functionalities.</li>
+                                                	<li><b>Continue building the app after openEHR team finishes implementation:</b> We truly built a proof of concept as we used the openEHR API in most of its functionalities. However, some openEHR templates (used to store data) aren't built yet, so we couldn't implement them.</li>
+                                                </ul>
                                             </p>
 
                                         </div>
