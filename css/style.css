@@ -86,6 +86,7 @@ h1,h2,h4,h4,h5,h6 {
 
 p, li {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
 }
 
 .title{
@@ -323,4 +324,14 @@ pre.pdf {
 
 * html .clearfix {
     height: 1%;
+}
+
+.code{
+	white-space: pre-line;
+	text-align: left;
+	display: inline-block;
+	background-color: #dddddd;
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
 }

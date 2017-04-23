@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <title>UCL Peach Project | Team 35</title>
+
+	    <!-- Favicon -->
+	    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+	    <!-- Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Lora:400,700|Open+Sans:300,400,700" rel="stylesheet">
+
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/style.css">
+
+	    <!-- SCRIPT -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  	<script src="js/wow.js"></script>
+	    <script src="js/script.js"></script>
+	    <script type="text/javascript">
+	    	new WOW().init();
+	    </script>
+
+  	</head>
+	<body data-spy="scroll" data-target="#myNav" data-offset="20">
+
+  		<div class="menu-xs visible-xs">
+  			<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+  		</div>
+
+  		<div id="page">
+
+			<!-- Sidebar -->
+
+  			<div class="col-sm-4 col-md-3 dark-blue sidebar height-100 hidden-xs" id="myNav" >
+
+  				<a href="index.html"><img class="center-block mrg-top-25 logo" src="img/logo-white.svg" alt="logo"></a>
+
+  				<ul class="mrg-top-25 mrg-left-40 nav">
+                    <li><a class="no-deco" href="index.html"><h4>HOME</h4></a></li>
+  					<li><a class="no-deco" href="#section-requirements"><h4>REQUIREMENTS</h4></a></li>
+  					<li><a class="no-deco" href="research.html"><h4>RESEARCH</h4></a></li>
+  					<li><a class="no-deco" href="hci.html"><h4>HCI</h4></a></li>
+  					<li><a class="no-deco" href="design.html"><h4>DESIGN</h4></a></li>
+                    <li><a class="no-deco" href="testing.html"><h4>TESTING</h4></a></li>
+                    <li><a class="no-deco" href="evaluation.html"><h4>EVALUATION</h4></a></li>
+                    <li><a class="no-deco" href="management.html"><h4>MANAGEMENT</h4></a></li>
+  					<li><a class="no-deco" href="documents.html"><h4>DOCUMENTS</h4></a></li>
+  				</ul>
+
+  				<div style="position: absolute; bottom:0px; left:50%;">
+  					<div style="position: relative; left: -50%;">
+  						<div><a target="_blank" href="https://github.com/JhumanJ/COMP204P-Systems-Engineering"><i class="fa fa-github fa-3x txt-white" aria-hidden="true"></i></a></div>
+  					</div>
+
+  				</div>
+  			</div>
+
+  			<!-- Content -->
+
+  			<div class="height-100" id="content">
+  				<div class="col-sm-8 col-md-9 col-sm-offset-4 col-md-offset-3 height-100 no-pad">
+
+	  				<div id="separator-0"></div>
+
+	  				<div id="section-requirements" class="clearfix width-100">
+	  					<div class="col-xs-12 section-content">
+                            <h3 class="text-center txt-dark-blue title">REQUIREMENTS</h3>
+
+							<div class="text-center">
+		 						<br>
+								<i class=" wow fadeIn fa fa-check-square-o fa-3x txt-dark-blue" aria-hidden="true"></i>
+
+		 					</div>
+
+                            <br />
+                            <h3 class="txt-dark-blue title">CLIENT</h3>
+
+							<br>
+							<img class="wow fadeIn img-circle center-block" src="img/navin.png" style="width: 100px;">
+							<p class="text-center txt-dark-blue"><b>Dr. Navin Ramachandran</b></p>
+							<br>
+
+							<p>Our client is the UCLH (University College London Hospital), which implies that our application would significantly help patients and doctor. More specifically, a team called UCL Peach (Platform for Enhanced Analytics and Computational Healthcare), an open source community driven Data Science project by the Computer Science Department at UCL is helping out UCLH in managing this project, with us three students as one of the sub-teams. This application aims to potentially improve the standard procedures of medical registration of the patients, significantly speeding up the process where patient records go through the system. The client’s main representative is <b>Dr. Navin Ramachandran</b>, a dedicated doctor who has a passion towards this project and its success. He has been a great help to us, guiding us through the planning and coding of the project.</p>
+
+                            <br />
+	  						<h3 class="txt-dark-blue title">BACKGROUND</h3>
+
+		 					<br>
+
+						    <h4 class="txt-dark-blue">Problem Statement - What Problem Are We Solving?</h4>
+						    <p>Healthcare data is incredibly valuable, important and sensitive.
+						        Given these three attributes, it doesn't make sense, in the modern world, for this data to be collected, stored, transported and read-from a physical medium.
+						        Clearly there are several issues inherent in the current system.</p>
+						    <p>These problems include:</p>
+						    <table class="table table-list">
+						        <tbody>
+						            <tr>
+						                <td><i class="fa fa-unlock-alt txt-dark-blue"></i></td>
+						                <td>Security Issues associated with paper (eg. data unencrypted)</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-clock-o txt-dark-blue"></i></td>
+						                <td>Slow to transcribe data</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-exchange txt-dark-blue"></i></td>
+						                <td>Slow to transfer data</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-qrcode txt-dark-blue"></i></td>
+						                <td>Awkward transition when data is needed digitally</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-files-o txt-dark-blue"></i></td>
+						                <td>Leads to redundant or duplicated data, opening the door to consistency errors</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-pencil-square-o txt-dark-blue"></i></td>
+						                <td>Subjectivity / illegibility of handwriting</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-archive txt-dark-blue"></i></td>
+						                <td>Requires physical storage space, which is more expensive then digital storage</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-fire txt-dark-blue"></i></td>
+						                <td>Physical assets are more readily lost / damaged</td>
+						            </tr>
+						        </tbody>
+						    </table>
+						    <br>
+						    <h4 class="txt-dark-blue">How Does The Peach Project Help?</h4>
+						    <p>Many of the issues raised above are solved simply by converting from a physical medium to a digital one.
+						        That is where The Peach Project comes in.
+						        We are constructing a platform where healthcare professionals can perform all the tasks they do currently, but benefit from doing so digitally.</p>
+						    <p>These benefits include:</p>
+						    <table class="table table-list">
+						        <tbody>
+						            <tr>
+						                <td><i class="fa fa-globe txt-dark-blue"></i></td>
+						                <td>Access to current patient record at any time and from any location</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-database txt-dark-blue"></i></td>
+						                <td>Patient data linked to Master Patient Index, meaning core patient data is pre-filled</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-file txt-dark-blue"></i></td>
+						                <td>Pre-existing patient data is used to pre-fill forms, removing the need to transcribe duplicate data</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-check-square-o txt-dark-blue"></i></td>
+						                <td>Form validation prevents entry of obviously incorrect data, leading to higher data quality</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-shield txt-dark-blue"></i></td>
+						                <td>Data cannot be lost or damaged</td>
+						            </tr>
+						            <tr>
+						                <td><i class="fa fa-money txt-dark-blue"></i></td>
+						                <td>Removes need for physical storage and supplies, reducing costs</td>
+						            </tr>
+						        </tbody>
+						    </table>
+
+                            <br />
+	  						<h3 class="txt-dark-blue title">REQUIREMENTS GATHERING</h3>
+
+                            <p>
+                                At the begining of the project, our client us provided us a set of requirements. We misunderstood one (general workflow). Once we truly understood what it was about, we made some research and realized that this requirement could hardly be done within 6 months, considering all the other requirements we had. We talked to our client who has been very comprehensive. Hence, we took this off our requirement and replaced it with others (<a href="#requirements-table">See requirements table</a>).
+                            </p>
+
+                            <br />
+	  						<h3 class="txt-dark-blue title">PERSONA</h3>
+                            <p>
+                                We made three personas representing well our users. A young technology-aware doctor, a middle-age MDT coordinator, and a senior GP. This shows that ease of use is a major criteria for this application, and that portability and reponsiveness really are important.
+                            </p>
+                            <img src="img/personas/1.png" class="center-block" style="width:400px;"/>
+                            <br/>
+                            <img src="img/personas/2.png" class="center-block" style="width:400px;"/>
+                            <br/>
+                            <img src="img/personas/3.png" class="center-block" style="width:400px;"/>
+
+                            <br />
+	  						<h3 class="txt-dark-blue title">STORYBOARD</h3>
+                            <p>
+                                Here is our main story board. Only a basic user role is represented, but all operations are suggested. Indeed, Doctor refer a patient, MDT coordinator assigns him to a meeting, meeting takes place, and jobs are assigned to doctors.
+                            </p>
+                            <img src="img/storyboard.png" class="img-responsive"/>
+
+                            <br />
+	  						<h3 class="txt-dark-blue title">MoSCoW REQUIREMENT LIST</h3>
+
+                            <p>This is the most recent list of requirements. As with any agile-based project, this list has evolved over time alongside the changing needs of the client.</p>
+
+                            <div class="table-responsive" id="requirements-table">
+
+    							    <table class="table table-hover table-striped">
+    							        <thead>
+    							        <tr>
+    							            <th>ID</th>
+    							            <th>Requirement</th>
+    							            <th>Type</th>
+    							            <th>Component</th>
+    							            <th>Priority</th>
+    							        </tr>
+    							        </thead>
+    							        <tbody>
+    							        <tr>
+    							            <th class="text-center">1</th>
+    							            <td><b>Scheduler:</b> The scheduler component is bascially a personal agenda. Every medical staff will have its own agenda, reuniting the meetings he is involved in, his reminders... and possibly others.</td>
+    							            <td class="text-center"><b>Category</b></td>
+    							            <td class="text-center">Scheduler</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							         <tr>
+    							            <th class="text-center">1.1</th>
+    							            <td>Scheduler shall have a nice and clear look, comparable to Google Calendar.</td>
+    							            <td class="text-center">UI</td>
+    							            <td class="text-center">Scheduler</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">1.2</th>
+    							            <td>Scheduler shall have the ability to hold meetings and reminders.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Scheduler</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">1.3</th>
+    							            <td>Admin shall be able to add/edit meetings.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Scheduler</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">1.4</th>
+    							            <td>Meetings shall have a start/end time along with location.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Scheduler</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">1.5</th>
+    							            <td>Meetings shall have a list of attending team members.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Scheduler</td>
+    							            <td class="text-center">Should</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">1.6</th>
+    							            <td>Patients shall be dragged and dropped into meetings by Admin.</td>
+    							            <td class="text-center">UI</td>
+    							            <td class="text-center">Scheduler</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+                                        <tr>
+                                           <th class="text-center">1.7</th>
+                                           <td>Several specialities shall be assign to meetings.</td>
+                                           <td class="text-center">Functional</td>
+                                           <td class="text-center">Scheduler</td>
+                                           <td class="text-center">Must</td>
+                                       </tr>
+                                       <tr>
+                                          <th class="text-center">1.8</th>
+                                          <td>Patients can be assigned to a particular speciality when assigned to a meeting.</td>
+                                          <td class="text-center">Functional</td>
+                                          <td class="text-center">Scheduler</td>
+                                          <td class="text-center">Must</td>
+                                      </tr>
+                                      <tr>
+                                         <th class="text-center">1.8</th>
+                                         <td>Referred patients should be automatically be in the list of patients to assign.</td>
+                                         <td class="text-center">Functional</td>
+                                         <td class="text-center">Scheduler</td>
+                                         <td class="text-center">Must</td>
+                                     </tr>
+    							        <tr>
+    							            <th class="text-center">2</th>
+    							            <td><b>Patient Search:</b> Admin can search for patients in order to assign them to meetings, via drag and drop.</td>
+    							            <td class="text-center"><b>Category</b></td>
+    							            <td class="text-center">Search</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">2.1</th>
+    							            <td>Patients shall be searchable in real-time (without page reloading)</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Search</td>
+    							            <td class="text-center">Should</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">2.2</th>
+    							            <td>Admin shall be able to have a quick overview of patient history from the search result list.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Search</td>
+    							            <td class="text-center">Should</td>
+    							        </tr>
+                                        <tr>
+    							            <th class="text-center">2.3</th>
+    							            <td>Users shall be able to create new patients.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Search</td>
+    							            <td class="text-center">Should</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">3</th>
+    							            <td><b>Jobs List:</b> MDT (Multi-disciplinary team) coordinator shall be able to asign jobs to other team member.</td>
+    							            <td class="text-center"><b>Category</b></td>
+    							            <td class="text-center">Jobs List</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">3.1</th>
+    							            <td>MDT coordinator shall be able to search for other team members.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Jobs List</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">3.2</th>
+    							            <td>MDT coordinator shall be able to assign Jobs to team members.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Jobs List</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+                                        <tr>
+    							            <th class="text-center">3.3</th>
+    							            <td>MDT coordinator shall be able to delete Jobs.</td>
+    							            <td class="text-center">Functional</td>
+    							            <td class="text-center">Jobs List</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">4</th>
+    							            <td><b>Workflow:</b> We looked into developing a workflow manager, but it revealed itself very complicated.</td>
+    							            <td class="text-center"><b>Category</b></td>
+    							            <td class="text-center">Worflow</td>
+    							            <td class="text-center">Cancelled</td>
+    							        </tr>
+                                        <tr>
+    							            <th class="text-center">5</th>
+    							            <td><b>Referral:</b> The referral page is a massive form where MDT coordinators can refer new patients.</td>
+    							            <td class="text-center"><b>Category</b></td>
+    							            <td class="text-center">Referral</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+                                        <tr>
+    							            <th class="text-center">5.1</th>
+    							            <td>MDT coordinators should be able to search for patients and refer them.</td>
+    							            <td class="text-center"><b>Functional</b></td>
+    							            <td class="text-center">Referral</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+                                        <tr>
+    							            <th class="text-center">5.2</th>
+    							            <td>MDT coordinators should be able to create new patients.</td>
+    							            <td class="text-center"><b>Functional</b></td>
+    							            <td class="text-center">Referral</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">6</th>
+    							            <td><b>UI:</b> The components built shall respecte the guidelines of the Peach project that may be find <a href="http://peach-design-guide.webflow.io" target="_blank">here</a>.</td>
+    							            <td class="text-center"><b>Category</b></td>
+    							            <td class="text-center">UI</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+    							        <tr>
+    							            <th class="text-center">7</th>
+    							            <td><b>Integration:</b> The components built shall be easy to integrate to the PEACH Project.</td>
+    							            <td class="text-center"><b>Category</b></td>
+    							            <td class="text-center">Integration</td>
+    							            <td class="text-center">Must</td>
+    							        </tr>
+                                        <tr>
+                                           <th class="text-center">8</th>
+                                           <td><b>openEHR:</b> The application should be connected to the openEHR api. All private information about patients (such as age for instance), should only be stored there. Any required information in the app should be direclty pulled form openEHR.</td>
+                                           <td class="text-center"><b>Category</b></td>
+                                           <td class="text-center">API</td>
+                                           <td class="text-center">Must</td>
+                                       </tr>
+                                       <tr>
+                                          <th class="text-center">9</th>
+                                          <td><b>API:</b> The application should have its own api to be consumed by the different front-end components.</td>
+                                          <td class="text-center"><b>Category</b></td>
+                                          <td class="text-center">API</td>
+                                          <td class="text-center">Must</td>
+                                      </tr>
+                                       </tbody>
+    							    </table>
+                                </div>
+
+                            <br />
+	  						<h3 class="txt-dark-blue title">User cases</h3>
+                            <p>
+                                <b>Type of users:</b>
+                                <ul>
+                                    <li>
+                                        MDT Co-ordinator
+                                    </li>
+                                    <li>
+                                        Referrer (no access to MDT list)
+                                    </li>
+                                    <li>
+                                        General Clinician (can refer and review MDT list)
+                                    </li>
+                                    <li>
+                                        MDT Chair
+                                    </li>
+                                    <li>
+                                        Admin (can review and make some changes to MDT list - these are to be confirmed)
+                                    </li>
+                                </ul>
+                                <br/>
+                                <b>General workflow of pages:</b>
+                                <ul>
+                                    <li>
+                                        Referral form
+                                    </li>
+                                    <li>
+                                        Triage - of forms to allot to MDTs
+                                    </li>
+                                    <li>
+                                        Case preparation - by juniors, preparing the referred patients details in time for MDT
+                                    </li>
+                                    <li>
+                                        Live MDT - the actual MDT, where there are notes and outcomes recorded
+                                    </li>
+                                    <li>
+                                        Confirmation - Post-MDT review to sign off (ie verify and close) each MDT case
+                                    </li>
+                                    <li>
+                                        Jobs - list of generated jobs to be actioned
+                                    </li>
+                                </ul>
+                            </br/>
+                            <p>
+                                <b>User case diagram for MDT-coordinators: </b>
+                                <img src="img/coordinator-user-case.jpg" class="img-responsive" />
+                            </p>
+                            <br/>
+                            All the details of the user cases can be find in the document sections. <a target="_blank" href="pdf/usercase.pdf">Click here to see the document.</a>
+                        </br/>
+                        </br?>
+
+						</div>
+	  				</div>
+
+  				</div>
+
+
+  			</div>
+
+  		</div>
+
+  	</body>
+</html>
